@@ -1,0 +1,60 @@
+.loading {
+  width: 100vw;
+  height: 100vh;
+  position:relative;
+  background-color:white;
+  color: black;
+  font-size: 1.5rem;
+
+  &-gif {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-text1 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: type 2s steps(18);
+    overflow:hidden;
+    white-space: nowrap;
+    font-family: consolas;
+    border-right: 4px solid black;
+    width: 18ch;
+    opacity: 0;
+  }
+  &-text2 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: type2 2s steps(30);
+    animation-delay: 2s;
+    overflow:hidden;
+    white-space: nowrap;
+    font-family: consolas;
+    border-right: 4px solid black;
+    width: 30ch;
+    opacity: 0;
+
+  }
+  &-text3 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: type3 2s steps(33) forwards;
+    animation-delay: 4s;
+    overflow:hidden;
+    white-space: nowrap;
+    font-family: consolas;
+    border-right: 4px solid black;
+    width: 33ch;
+    opacity: 0;
+  }
+
+}
+

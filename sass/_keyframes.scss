@@ -1,0 +1,99 @@
+//landing
+
+@keyframes fadeIn {
+
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+//loading
+@keyframes type {
+  0% {
+    width: 0ch;
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    width: 18ch;
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+    width: 18ch;
+  }
+  90% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    width: 0ch;
+    opacity: 0;
+  }
+}
+@keyframes type2 {
+  0% {
+    width: 0ch;
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    width: 30ch;
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+    width: 30ch;
+  }
+  90% {
+    opacity: 1;
+    
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    width: 0ch;
+    opacity: 0;
+  }
+}
+@keyframes type3 {
+  0% {
+    width: 0ch;
+    opacity: 1;
+  }
+
+  100% {
+    width: 33ch;
+    opacity: 1;
+  }
+}
+
+//about --space
+
+@keyframes space {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes gspace {
+  0% {
+    transform: translate(-50%, 100%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}

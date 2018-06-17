@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- <div class="bg__image">
+        <div class="bg__image-img2"></div>
+        <p class="bg__text-front bg-text">Front</p>
+        <p class="bg__text-end bg-text">End</p>
+        <p class="bg__text-web bg-text">Web</p>
+        <p class="bg__text-dev bg-text">Developer</p>
+        <div class="bg__image-img"></div>
+        <button class="bg-enter">Enter Site</button>
+    </div>
+    <div class="loading">
+      <img src="img/radio.gif" alt="" class="loading-gif">
+      <p class="loading-text1 test">
+        Loading website...
+      </p>
+      <p class="loading-text2">
+        Banging servers with wrench...
+      </p>
+      <p class="loading-text3">
+        Contacting monkeys for support...
+      </p>
+    </div> -->
+
+<div class="container-fluid page-contain">
+
+      <div class="weather">
+        <div class="pulse">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="location">
+          <span id="city"></span>
+          <span id="country"></span>
+        </div> 
+        <div id="time"></div>
+        <div class="temp">Temp: 
+          <span id="temp"></span>
+          <span id="tempicon" style="cursor:pointer"></span>
+        </div>
+      </div>
+
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+      <label for="navi-toggle" class="navigation__button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navigation__icon">&nbsp;</span>
+      </label>
+      
+      <div class="navigation__background">&nbsp;</div>
+    
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#" class="navigation__link port-item" data-toggle="collapse" data-target="#home"><span>01</span>About Gerard</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link port-item" data-toggle="collapse" data-target="#resume"><span>02</span>Your benfits</a></li>
+          <li class="navigation__item" data-toggle="collapse" data-target="#work"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
+          <li class="navigation__item" data-toggle="collapse" data-target="#contact"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- <header id="main-header">
+      <div class="row no-gutters">
+        <div class="col-lg-12">
+          <div class="d-flex flex-row justify-content-between align-items-center">
+            <div class="p-5 bg-black nav-info">
+              Front End Developer
+            </div>
+          </div>
+          <div class="d-flex flex-column">
+            <div class="p-5 bg-light text-dark">
+              <div class="name d-flex flex-row justify-content-between align-items-center">
+                <h1 class="display-4">Gerard Genovese</h1>
+                <div><i class="fab fa-twitter"></i></div>
+                <div><i class="fab fa-facebook"></i></div>
+                <div><i class="fab fa-instagram"></i></div>
+                <div><i class="fab fa-github"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header> -->
+
+    <!--HOME-->
+    <div id="home" class="collapse show">
+ 
+      <div class="container__item landing-page-container">
+        <div class="earth"></div>
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+
+        <img class="g-space" src="img/astronout2.png" alt="">
+        <div class="greeting">Reach the stars</div>
+        <p class="coords">G 4H&#176; 1R' 3M.G3R" / A R&#176; D2' H1.73" </p> 
+      </div>
+  
+      <div class="container about__font-container">
+        <div class="text-center about__font-main-header">The Front-End Experience</div>
+        <div class="card-deck">
+          <div class="card about__card-border">
+            <div class="card-body about__font about__font-responsive">
+              <i class="fas fa-tv"></i>
+              <i class="fas fa-mobile-alt"></i>
+  
+            </div>
+            <div class="about__font-responsive-body">
+              <h4 class="card-title text-center about__font-header">Responsive Design</h4>
+              <p class="card-text text-center about__font-text">View my work on any device.</p>
+            </div>
+          </div>
+
+          <div class="card about__card-border">
+            <div class="card-body about__font about__font-newspaper">
+              <i class="far fa-newspaper"></i>   
+            </div>
+
+            <div class="about__font-newspaper-body">
+              <h4 class="card-title text-center about__font-header">Great UX/UI Usability</h4>
+              <p class="card-text text-center about__font-text">Enjoy a quality user experience.</p>
+            </div>
+          </div>
+          <div class="card about__card-border">
+            <div class="card-body about__font about__font-dynamic">
+              <i class="fas fa-dna"></i>  
+            </div>
+
+            <div class="about__font-dynamic-body">
+              <h4 class="card-title text-center about__font-header">Dynamic Web Pages</h4>
+              <p class="card-text text-center about__font-text">From Static to dynamic web pages and everything in-between.</p>
+            </div> 
+          </div>
+        </div>
+      </div>
+
+      <section class="about">
+        <div class="container-fluid about__container">
+          <div class="about__header">
+            Learn About Me
+          </div>
+          <div class="row">
+            <div class="col-md-4 about__picture-container">
+              <img src="img/about-me.jpg" alt="" class="about__picture">
+              <h3 class="about__picture--name text-center">Gerard Genovese</h3>
+              <h5 class="about__picture--title text-muted text-center">Front End Web Developer</h5>
+            </div>
+            <div class="col-md-8">
+              <div class="about__skills">
+                <span class="about__skill about__html5">HTML5</span>
+                <span class="about__skill about__css3">CSS3</span>
+                <span class="about__skill about__bootstrap">Bootstrap</span>
+                <span class="about__skill about__sass">Sass</span>
+                <span class="about__skill about__javascript">JavaScript</span>
+                <span class="about__skill about__express">Express</span>
+                <span class="about__skill about__mongoDB">MongoDB</span>
+                <span class="about__skill about__php">PHP</span>
+                <span class="about__skill about__mysql">mySQL</span>
+
+                <div class="about__html5-bar about__skills-bar progress-bar-striped"> &nbsp;
+                  </div>
+                <div class="about__css3-bar about__skills-bar progress-bar-striped"> &nbsp;
+                </div>
+                <div class="about__bootstrap-bar about__skills-bar progress-bar-striped"> &nbsp;
+                </div>
+                <div class="about__sass-bar about__skills-bar progress-bar-striped"> &nbsp;
+                  </div>
+                <div class="about__javascript-bar about__skills-bar progress-bar-striped"> &nbsp;
+                </div>
+                <div class="about__express-bar about__skills-bar progress-bar-striped"> &nbsp;
+                </div>
+              
+                <div class="about__mongoDB-bar about__skills-bar progress-bar-striped"> &nbsp;
+                </div>
+                <div class="about__php-bar about__skills-bar progress-bar-striped"> &nbsp;
+                </div>
+                <div class="about__mysql-bar about__skills-bar progress-bar-striped"> &nbsp;
+                </div>
+                
+              </div>
+              <p class="about__info">
+                  I went to school at the College of Westchester and received my Associates degree in Multimedia and Management. I then persued my undergraduate degree out in Tempe Arizona at the University of Advancing Technology where I received my Bachelor's of Arts Degree in Multimedia. <br> <br> I have a hunger for learning about web development and have been learning the front-end experience. I've recently began my journey into the back-end with PHP & mySQL. With so much to learn, it's good to have a sensationable appetite!
+              </p>
+            </div>
+
+           
+         
+                <!-- <div class="progress-bar progress-bar-vertical progress-bar-success progress-bar-striped active progress-bar-animated about__html5-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 100%;">
+                </div>
+              -->
+
+
+
+          </div> <!--row-->
+        </div>
+      </section>
+
+<!-- 
+        <section class="about__me text-center">
+          <div class="container">
+            <div class="row about__me-flex">
+             
+              <div class="col-lg-9 col-md-12 about__me-section">
+                <div class="card mb-2 about__me-body">
+                  
+                    <p class="lead about__me-section-text"> I went to school at the College of Westchester and received my Associates degree in Multimedia and Management. I then persused my Bachelor's degree out in Tempe Arizona at the University of Advancing Technology where I received my Bachelor's of Arts Degree in Multimedia. <br> <br>About a year and half ago I decided to dive into the world of programming. There has always been an inner-voice in my head that kept pushing me towards learning how to program so I finally took the dive and I've loved every second since.  During this time I've learned a lot and put together some fun projects. <br><br>
+                    When I'm not coding, I'm wondering why my code doesn't work. When I am coding, I'm wondering why my code works. I love this stuff! But when I'm not contemplating the inner workings of one's and zeroes, focused on a project I'm working on or a site I'm building, I like going to gym, playing video games, making music, working in Adobe programs like photoshop and premeire or just relaxing with family and friends. Well enough about me. Check out the rest of my site!</p>
+ 
+               
+                </div>
+              </div>  
+              
+              <div class="col-lg-3 col-md-12">
+                  <div class="">
+                    <div class="card-body about__me-info">
+                      <img src="img/about-me.JPG" alt="" class="img-fluid about__me-picture">
+                      <h3>Gerard Genovese</h3>
+                      <h5 class="text-muted">Front End Web Developer</h5>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </section> -->
+
+
+    </div> <!--end home page-->
+
+     
+
+
+
+
+        
+
+    <!--Resume-->
+    <div id="resume" class="collapse">
+        <div class="card card-body bg-success text-white py-5">
+            <h2>My Resume</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quae soluta esse ratione molestiae ducimus?</p>
+        </div>
+        <div class="card card-body py-5">
+            <h3>Where Have I Worked?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iste, impedit a officia quis perspiciatis!</p>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Devmasters</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, provident.</p>
+                        <p class="p-2 mb-3 bg-dark text-white">
+                            Position: Full Stack Developer
+                        </p>
+                        <p class="p-2 mb-3 bg-dark text-white">
+                           Phone: (444) 444-4444
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <h6 class="text-muted">Dates: 2015 - 2017</h6>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Websites Pro</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, provident.</p>
+                        <p class="p-2 mb-3 bg-dark text-white">
+                            Position: Front End Developer
+                        </p>
+                        <p class="p-2 mb-3 bg-dark text-white">
+                            Phone: (444) 555-4444
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <h6 class="text-muted">Dates: 2013 - 2015</h6>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">123 Designs</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, provident.</p>
+                        <p class="p-2 mb-3 bg-dark text-white">
+                            Position: Designer
+                        </p>
+                        <p class="p-2 mb-3 bg-dark text-white">
+                            Phone: (444) 666-4444
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <h6 class="text-muted">Dates: 2010 - 2013</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Work-->
+    <div id="work" class="collapse">
+        <div class="card card-body bg-warning py-5">
+            <h3>My Portfolio</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, laboriosam?</p>
+        </div>
+        <div class="card card-body py-5">
+            <h3>What Have I Built?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, minima.</p>
+            <!-- <div class="row no-gutters">
+                <div class="col-md-3">
+                    <a href="http://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox">
+                        <img src="http://unsplash.it/600.jpg?image=251" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="http://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox">
+                        <img src="http://unsplash.it/600.jpg?image=252" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="http://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox">
+                        <img src="http://unsplash.it/600.jpg?image=253" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="http://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox">
+                        <img src="http://unsplash.it/600.jpg?image=254" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div> -->
+
+            <!-- <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <a href="http://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox">
+                            <img src="http://unsplash.it/600.jpg?image=255" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="http://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox">
+                            <img src="http://unsplash.it/600.jpg?image=256" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="http://unsplash.it/1200/768.jpg?image=257" data-toggle="lightbox">
+                            <img src="http://unsplash.it/600.jpg?image=257" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="http://unsplash.it/1200/768.jpg?image=258" data-toggle="lightbox">
+                            <img src="http://unsplash.it/600.jpg?image=258" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div> -->
+        </div>
+    </div>
+
+    <!--Contact-->
+    <div id="contact" class="collapse">
+        <div class="card card-body bg-danger text-white py-5">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, facere.</p>
+        </div>
+        <div class="card card-body py-5">
+            <h3>Get in touch</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, natus?</p>
+            <form>
+                <div class="form-group">
+                    <div class="input-group input-grou-lg">
+                        <span class="input-group-addon bg-danger text-white">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <input type="text" class="form-control bg-dark text-white" placeholder="Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group input-grou-lg">
+                        <span class="input-group-addon bg-danger text-white">
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                        <input type="email" class="form-control bg-dark text-white" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group input-grou-lg">
+                        <span class="input-group-addon bg-danger text-white">
+                            <i class="fa fa-pencil"></i>
+                        </span>
+                        <textarea rows="5" class="form-control bg-dark text-white" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <input type="submit" value="Submit" class="btn btn-danger btn-block btn-lg">
+            </form>
+        </div>
+    </div>
+
+
+
+    <!--Footer-->
+    <footer id="main-footer" class="mt-5 p-5 bg-dark text-white">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#" class="btn btn-outline-light"><i class="fa fa-cloud"></i> Download My Resume</a>
+            </div>
+        </div>
+    </footer>
+    
+</div><!--container end-->
+
+  
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script>
+      $('.port-item').click(function(){
+        $('.collapse').collapse('hide');
+    });
+</script>
+</body>
+</html>
