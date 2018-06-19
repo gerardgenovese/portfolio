@@ -356,3 +356,135 @@ window.onscroll = function() {
 
 }
 
+
+
+
+
+
+/////////////////WORK PAGE///////////////////
+
+// //on hover animate overlay with text
+// document.querySelector('.overlay').addEventListener('mouseover', animate);
+
+// function animate() {
+
+// // document.querySelector('.work__desc').classList.add('work__desc-add');
+
+//   // document.querySelector('.work__button').classList.add('work__button-add');
+
+//   if ('mouseover' === true) {
+//     console.log('yes');
+//   }
+// }
+
+
+// //on hover off animate back
+// document.querySelector('.overlay').addEventListener('mouseout', resetAnimate);
+
+// function resetAnimate(e) {
+//   document.querySelector('.work__button').classList.remove('work__button-add');
+
+//   document.querySelector('.work__button').style.transition = ".5s";
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let overlay = document.querySelectorAll('.work__overlay');
+
+// for (let i = 0; i < overlay.length; i++) {
+
+//   overlay[i].addEventListener('mousover', function(){
+//     console.log('yes')
+//   });
+
+// }
+
+
+// document.body.addEventListener('mouseover', function(e){
+//   if (e.target.classList.contains('work__overlay')) {
+
+//     let workDesc = document.querySelectorAll('.work__desc');
+//     let workButton = document.querySelectorAll('.work__button');
+
+//     for (let i = 0; i < workDesc.length; i++) {
+//       workDesc[i].classList.add('work__desc-add');
+//       workButton[i].classList.add('work__button-add');
+//     }
+
+//   }
+// });
+
+
+
+//Card 1
+document.querySelector('.work__overlay').addEventListener('mouseover', function(){
+
+  document.querySelector('.work__desc').classList.add('work__desc-add');
+  document.querySelector('.work__button').classList.add('work__button-add'); 
+});
+//on hover off animate back
+document.querySelector('.work__overlay').addEventListener('mouseout', function(){
+
+  document.querySelector('.work__desc').classList.remove('work__desc-add');
+  document.querySelector('.work__desc').style.transition = ".5s";
+
+  document.querySelector('.work__button').classList.remove('work__button-add');
+  document.querySelector('.work__button').style.transition = ".5s";
+});
+
+//Card 2
+document.querySelector('.work__overlay2').addEventListener('mouseover', function(){
+
+  document.querySelector('.work__desc2').classList.add('work__desc-add');
+  document.querySelector('.work__button2').classList.add('work__button-add'); 
+});
+//on hover off animate back
+document.querySelector('.work__overlay2').addEventListener('mouseout', function(){
+
+  document.querySelector('.work__desc2').classList.remove('work__desc-add');
+  document.querySelector('.work__desc2').style.transition = ".5s";
+
+  document.querySelector('.work__button2').classList.remove('work__button-add');
+  document.querySelector('.work__button2').style.transition = ".5s";
+});
+
+//Card 3
+document.querySelector('.work__overlay3').addEventListener('mouseover', function(){
+
+  document.querySelector('.work__desc3').classList.add('work__desc-add');
+  document.querySelector('.work__button3').classList.add('work__button-add'); 
+});
+//on hover off animate back
+document.querySelector('.work__overlay3').addEventListener('mouseout', function(){
+
+  document.querySelector('.work__desc3').classList.remove('work__desc-add');
+  document.querySelector('.work__desc3').style.transition = ".5s";
+
+  document.querySelector('.work__button3').classList.remove('work__button-add');
+  document.querySelector('.work__button3').style.transition = ".5s";
+});
+
+
+
+
+
+
+
+
+

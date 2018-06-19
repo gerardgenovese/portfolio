@@ -586,8 +586,11 @@ animation:move-twink-back 200s linear infinite;
 
 
   &__info {
+    opacity: 0;
     padding-top: 3rem;
     font-size: 1.3rem;
+    animation: fadeIn 1s forwards;
+    animation-delay: 3.5s;
   } 
 
 

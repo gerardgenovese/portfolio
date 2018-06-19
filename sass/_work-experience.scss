@@ -1,69 +1,84 @@
-.work__container {
-  position: relative;
-  width: 50%;
-}
+.work {
 
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgb(147, 205, 224);
- 
-}
-
-.work__container:hover .overlay {
-  opacity: 1;
-
-}
-
-.work__desc {
-  background-color:transparent;
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  text-align: center;
-
-
-  &-add {
-    transition: .5s;
-    top:40%;
+  &__experience {
+    border: none;
   }
-}
+  &__container {
+    position: relative;
+    padding: 0;
+    // width: 50%;
 
-.work__button {
-  background-color:transparent;
-  color: white;
-  border: 2px solid rgb(80, 80, 201);
-  font-size: 20px;
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-
-  &-add {
-    transition: .5s;
-    top:60%;
+    &:hover .work__overlay {
+      opacity: 1;
+    }
   }
 
-  &:hover {
-    background-color: rgb(80, 80, 201);
-    color:rgb(228, 216, 216) !important;
-    transition: .5s;
+  &__image {
+    height: 40rem;
   }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(147, 205, 224);
+  }
+
+  &__desc {
+    background-color:transparent;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  
+    &-add {
+      transition: .5s;
+      top:40%;
+    }
+  }
+
+  &__button {
+    background-color:transparent;
+    color: white;
+    border: 2px solid rgb(80, 80, 201);
+    font-size: 20px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  
+    &-add {
+      transition: .5s;
+      top:60%;
+    }
+  
+    &:hover {
+      background-color: rgb(80, 80, 201);
+      color:rgb(228, 216, 216) !important;
+      transition: .5s;
+    }
+  }
+
+//Work Modal
+  &__modal1 {
+    width: 100%;
+    height: 35rem;
+  }
+  
 }
 
-#myModal {
+
+
+#myModal-blog {
   overflow-y:hidden;
 }

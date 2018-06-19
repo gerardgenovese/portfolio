@@ -6,7 +6,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-x: hidden; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -681,8 +682,11 @@ i {
         animation: mysql 1s forwards;
         animation-delay: 2.3s; }
   .about__info {
+    opacity: 0;
     padding-top: 3rem;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    animation: fadeIn 1s forwards;
+    animation-delay: 3.5s; }
 
 @keyframes html5 {
   100% {
@@ -849,3 +853,65 @@ i {
     opaicty: 1; }
   100% {
     opacity: 1; } }
+
+.work__experience {
+  border: none; }
+
+.work__container {
+  position: relative;
+  padding: 0; }
+  .work__container:hover .work__overlay {
+    opacity: 1; }
+
+.work__image {
+  height: 40rem; }
+
+.work__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #93cde0; }
+
+.work__desc {
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .work__desc-add {
+    transition: .5s;
+    top: 40%; }
+
+.work__button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #5050c9;
+  font-size: 20px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .work__button-add {
+    transition: .5s;
+    top: 60%; }
+  .work__button:hover {
+    background-color: #5050c9;
+    color: #e4d8d8 !important;
+    transition: .5s; }
+
+.work__modal1 {
+  width: 100%;
+  height: 35rem; }
+
+#myModal-blog {
+  overflow-y: hidden; }
