@@ -48,11 +48,17 @@ function navClick(e) {
     setTimeout(function(){
       navList.style.display = 'none';
     }, 500);
-  } else {
+  } else if (checked === false) {
     navList.style.display = 'block';
   }
 }
 
+function linkChecked() {
+  const navList = document.querySelector('.navigation__list');
+  setTimeout(function(){
+    navList.style.display = 'none';
+  }, 500);
+}
 
 
 var api = "https://fcc-weather-api.glitch.me/api/current?"
@@ -352,7 +358,7 @@ window.onscroll = function() {
     document.querySelector('.about__mysql-bar').classList.add('about__mysql-bar-add');
   }
 
-  console.log(scroll);
+  // console.log(scroll);
 
 }
 

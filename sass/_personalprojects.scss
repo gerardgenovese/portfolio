@@ -1,0 +1,27 @@
+
+body.modal-open {
+  overflow: visible;
+  padding: 0 !important;
+}
+
+.work {
+
+  &__personal {
+
+    &-siteImg {
+      width: 100%;
+    }
+    &-text {
+      font-size: 1.3rem;
+    }
+    &-button {
+      border-radius: 0 !important;
+    }
+  }
+
+
+
+  &__modal-barber {
+    width: 100%;
+  }
+}

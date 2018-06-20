@@ -68,10 +68,10 @@
     
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link port-item" data-toggle="collapse" data-target="#home"><span>01</span>About Gerard</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link port-item" data-toggle="collapse" data-target="#work-experience"><span>02</span>Work Experience</a></li>
-          <li class="navigation__item" data-toggle="collapse" data-target="#work"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
-          <li class="navigation__item" data-toggle="collapse" data-target="#contact"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+          <li class="navigation__item" onclick="linkChecked()"><a href="#" class="navigation__link port-item" data-toggle="collapse" data-target="#home"><span>01</span>About Gerard</a></li>
+          <li class="navigation__item" onclick="linkChecked()"><a href="#" class="navigation__link port-item" data-toggle="collapse" data-target="#work-experience"><span>02</span>Work Experience</a></li>
+          <!-- <li class="navigation__item" data-toggle="collapse" data-target="#work"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
+          <li class="navigation__item" data-toggle="collapse" data-target="#contact"><a href="#" class="navigation__link"><span>04</span>Stories</a></li> -->
         </ul>
       </nav>
     </div>
@@ -195,51 +195,12 @@
                 
               </div>
               <p class="about__info">
-                  I went to school at the College of Westchester and received my Associates degree in Multimedia and Management. I then persued my undergraduate degree out in Tempe Arizona at the University of Advancing Technology where I received my Bachelor's of Arts Degree in Multimedia. <br> <br> I have a hunger for learning and my journey into front-end development has taught me alot. I recently dove into the back-end with PHP & mySQL. With so much to learn, it's good to have a sensationable appetite!
+                I went to school at the College of Westchester and received my Associates degree in Multimedia and Management. I then persued my undergraduate degree out in Tempe Arizona at the University of Advancing Technology where I received my Bachelor's of Arts Degree in Multimedia. <br> <br> I have a hunger for learning and my journey into front-end development has taught me alot. I recently dove into the back-end with PHP & mySQL. With so much to learn, it's good to have a sensationable appetite!
               </p>
             </div>
-
-           
-         
-                <!-- <div class="progress-bar progress-bar-vertical progress-bar-success progress-bar-striped active progress-bar-animated about__html5-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 100%;">
-                </div>
-              -->
-
-
-
           </div> <!--row-->
         </div>
       </section>
-
-<!-- 
-        <section class="about__me text-center">
-          <div class="container">
-            <div class="row about__me-flex">
-             
-              <div class="col-lg-9 col-md-12 about__me-section">
-                <div class="card mb-2 about__me-body">
-                  
-                    <p class="lead about__me-section-text"> I went to school at the College of Westchester and received my Associates degree in Multimedia and Management. I then persused my Bachelor's degree out in Tempe Arizona at the University of Advancing Technology where I received my Bachelor's of Arts Degree in Multimedia. <br> <br>About a year and half ago I decided to dive into the world of programming. There has always been an inner-voice in my head that kept pushing me towards learning how to program so I finally took the dive and I've loved every second since.  During this time I've learned a lot and put together some fun projects. <br><br>
-                    When I'm not coding, I'm wondering why my code doesn't work. When I am coding, I'm wondering why my code works. I love this stuff! But when I'm not contemplating the inner workings of one's and zeroes, focused on a project I'm working on or a site I'm building, I like going to gym, playing video games, making music, working in Adobe programs like photoshop and premeire or just relaxing with family and friends. Well enough about me. Check out the rest of my site!</p>
- 
-               
-                </div>
-              </div>  
-              
-              <div class="col-lg-3 col-md-12">
-                  <div class="">
-                    <div class="card-body about__me-info">
-                      <img src="img/about-me.JPG" alt="" class="img-fluid about__me-picture">
-                      <h3>Gerard Genovese</h3>
-                      <h5 class="text-muted">Front End Web Developer</h5>
-                    </div>
-                  </div>
-                </div>
-
-            </div>
-          </div>
-        </section> -->
-
 
     </div> <!--end home page-->
 
@@ -250,7 +211,7 @@
 
         
 
-  <!--Resume-->
+  <!--Work-->
   <div id="work-experience" class="collapse show">
 
     <div class="card card-body py-5 work__experience">
@@ -283,22 +244,55 @@
         </div>
       </div>
     </div>
-  </div>
+
+
+    <div class="container-fluid">
+        <h3>Personal Projects</h3>
+        <p>Mock-up static web sites.</p>
+      <div class="row">
+        <div class="col-md-2 mb-5">
+          <img src="../img/scissors.png" class="work__personal-siteImg" alt="">
+          <p class="text-center m-auto py-3 work__personal-text">Barbershop Website</p>
+          <button type="button" class="btn btn-primary btn-block work__personal-button" data-toggle="modal" data-target="#barber">
+            Learn More
+          </button>
+        </div>
+        <div class="col-md-2 mb-5">
+          <img src="../img/massage.jpg" class="work__personal-siteImg" alt="">
+          <p class="text-center m-auto py-3 work__personal-text">Masseuse Website</p>
+          <button type="button" class="btn btn-primary btn-block work__personal-button" data-toggle="modal" data-target="#masseuse">
+            Learn More
+          </button>
+        </div>
+        <div class="col-md-2 mb-5">
+          <img src="../img/everest.jpg" class="work__personal-siteImg" alt="">
+          <p class="text-center m-auto py-3 work__personal-text">Mt.Everest Website</p>
+          <button type="button" class="btn btn-primary btn-block work__personal-button" data-toggle="modal" data-target="#everest">
+            Learn More
+          </button>
+        </div>
+        
+      </div>
+    </div>
+    
+
+
+  </div><!--work end-->
 
 
 
 <!-- MODAL Blog -->
-<div class="modal" id="myModal-blog">
-  <div class="modal-dialog">
+<div class="modal fade" id="myModal-blog">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Executive Telegraph</h5>
         <button class="close" data-dismiss="modal">&times;</button>
       </div>
     
-      <div class="modal-body">
-        <img src="img/blog-modal.jpg" class="work__modal1" alt="">
-        <p>Executive Telegraph is a News/Media blog site I created using a WordPress theme. I created a logo, created topics, and uploaded various blog posts about different current events. I used google adsense to monitize the site. </p>
+      <div class="">
+        <img src="img/blog-modal.jpg" class="work__modal-img" alt="">
+        <p class="work__modal-info">Executive Telegraph is a News/Media blog site created using a WordPress theme. I created a logo, customized widgets, and uploaded various blog posts about different current events. I used google adsense to monitize the site. </p>
       </div>
       <div class="modal-footer">
       <a href="http://executivetelegraph.com" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
@@ -309,17 +303,17 @@
 </div>
 
 <!-- MODAL proform -->
-<div class="modal" id="myModal-proform">
-  <div class="modal-dialog">
+<div class="modal fade" id="myModal-proform">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">ProForm Construction</h5>
         <button class="close" data-dismiss="modal">&times;</button>
       </div>
     
-      <div class="modal-body">
-        <img src="img/proform-modal.jpg" class="work__modal1" alt="">
-        <p>A NY based construction company looking to make an impact within the world of unionized construction. Created the site from scratch using HTML5, CSS3, SASS, Bootstrap and used PHP for the connection for the contact page to the C.E.O's email. Created the logo with Adobe Photoshop.  </p>
+      <div class="">
+        <img src="img/proform-modal.jpg" class="work__modal-img" alt="">
+        <p class="work__modal-info">Proform Construction LLC is a NY based construction company looking to make an impact within the world of unionized construction. I created the site using HTML5, CSS3, SASS, Bootstrap and used PHP for the connection for the contact page to the C.E.O's business email. I created the logo with Adobe Photoshop.  </p>
       </div>
       <div class="modal-footer">
       <a href="http://proformllc.com" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
@@ -330,17 +324,17 @@
 </div>
 
 <!-- MODAL rightpath -->
-<div class="modal" id="myModal-rightpath">
-  <div class="modal-dialog">
+<div class="modal fade" id="myModal-rightpath">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Right Path Home Inspections</h5>
         <button class="close" data-dismiss="modal">&times;</button>
       </div>
     
-      <div class="modal-body">
-        <img src="img/rightpath.jpg" class="work__modal1" alt="">
-        <p>An entrepreneur's dream to start his own home inspection business. Created a custom logo in Adobe Photoshop and built the site using HTML5, CSS3, SASS, Bootstrap, and used PHP to connect his contact page to his business email. </p>
+      <div class="">
+        <img src="img/rightpath.jpg" class="work__modal-img" alt="">
+        <p class="work__modal-info">Right Path Home Inspections was creatd for a home inspection business. I created their custom logo in Adobe Photoshop and built the site using HTML5, CSS3, SASS, Bootstrap, and used PHP to connect the contact page to his business email. </p>
       </div>
       <div class="modal-footer">
       <a href="http://rightpathinspections.com" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
@@ -351,6 +345,69 @@
 </div>
 
 
+<!-- Modal barber -->
+<div class="modal fade" id="barber" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Barber Site</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="../img/barbershop-modal.jpg" class="work__modal-barber" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="mock-up sites/barber-site/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal Masseuse -->
+<div class="modal fade" id="masseuse" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Masseuse Site</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="../img/massage-modal.jpg" class="work__modal-barber" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="mock-up sites/massage/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal Everest -->
+<div class="modal fade" id="everest" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Mt.Everest Site</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="../img/everest-modal.jpg" class="work__modal-barber" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="mock-up sites/everest/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
