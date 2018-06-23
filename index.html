@@ -100,51 +100,52 @@
     </header> -->
 
     <!--HOME-->
-    <div id="home" class="collapse">
- 
-      <div class="container__item landing-page-container">
+    <div id="home" class="collapse show">
+      <!--space-->
+      <div class="container__item space-container">
         <div class="earth"></div>
         <div class="stars"></div>
         <div class="twinkling"></div>
 
-        <img class="g-space" src="img/astronout2.png" alt="">
-        <div class="greeting">Reach the stars</div>
-        <p class="coords">G 4H&#176; 1R' 3M.G3R" / A R&#176; D2' H1.73" </p> 
+        <img class="space__astronaut" src="img/astronout2.png" alt="">
+        <div class="space__greeting">Reach the stars</div>
+        <p class="space__coords">G 4H&#176; 1R' 3M.G3R" / A R&#176; D2' H1.73" </p> 
       </div>
-  
-      <div class="container about__font-container">
-        <div class="text-center about__font-main-header">The Front-End Experience</div>
+
+
+      <!--development skills-->
+      <div class="container development__container">
+        <div class="text-center development__main-header">Development</div>
         <div class="card-deck">
-          <div class="card about__card-border">
-            <div class="card-body about__font about__font-responsive">
+
+          <div class="card development__body">
+            <div class="card-body development__center development__icon-1">
               <i class="fas fa-tv"></i>
               <i class="fas fa-mobile-alt"></i>
-  
             </div>
-            <div class="about__font-responsive-body">
-              <h4 class="card-title text-center about__font-header">Responsive Design</h4>
-              <p class="card-text text-center about__font-text">View my work on any device.</p>
+            <div class="development__body-text">
+              <h4 class="card-title text-center development__desc1">Responsive Design</h4>
+              <p class="card-text text-center development-desc2">View my work on any device.</p>
             </div>
           </div>
 
-          <div class="card about__card-border">
-            <div class="card-body about__font about__font-newspaper">
+          <div class="card development__body-2">
+            <div class="card-body development__center development__icon-2">
               <i class="far fa-newspaper"></i>   
             </div>
-
-            <div class="about__font-newspaper-body">
-              <h4 class="card-title text-center about__font-header">Great UX/UI Usability</h4>
-              <p class="card-text text-center about__font-text">Enjoy a quality user experience.</p>
+            <div class="development__body-text">
+              <h4 class="card-title text-center development__desc1">Great UX/UI Usability</h4>
+              <p class="card-text text-center development__desc2">Enjoy a quality user experience.</p>
             </div>
           </div>
-          <div class="card about__card-border">
-            <div class="card-body about__font about__font-dynamic">
+
+          <div class="card development__body-3">
+            <div class="card-body development__center development__icon-3">
               <i class="fas fa-dna"></i>  
             </div>
-
-            <div class="about__font-dynamic-body">
-              <h4 class="card-title text-center about__font-header">Dynamic Web Pages</h4>
-              <p class="card-text text-center about__font-text">From Static to dynamic web pages and everything in-between.</p>
+            <div class="development__body-text">
+              <h4 class="card-title text-center development__desc1">Dynamic Web Pages</h4>
+              <p class="card-text text-center development__desc2">From Static to dynamic web pages and everything in-between.</p>
             </div> 
           </div>
         </div>
@@ -245,29 +246,45 @@
       </div>
     </div>
 
-
+<!--personal projects-->
     <div class="container-fluid">
         <h3>Personal Projects</h3>
-        <p>Mock-up static web sites.</p>
+        <p>Mock-up static web sites (Landing Page).</p>
       <div class="row">
         <div class="col-md-2 mb-5">
-          <img src="../img/scissors.png" class="work__personal-siteImg" alt="">
+          <img src="img/scissors.png" class="work__personal-siteImg" alt="">
           <p class="text-center m-auto py-3 work__personal-text">Barbershop Website</p>
           <button type="button" class="btn btn-primary btn-block work__personal-button" data-toggle="modal" data-target="#barber">
             Learn More
           </button>
         </div>
         <div class="col-md-2 mb-5">
-          <img src="../img/massage.jpg" class="work__personal-siteImg" alt="">
+          <img src="img/massage.jpg" class="work__personal-siteImg" alt="">
           <p class="text-center m-auto py-3 work__personal-text">Masseuse Website</p>
           <button type="button" class="btn btn-primary btn-block work__personal-button" data-toggle="modal" data-target="#masseuse">
             Learn More
           </button>
         </div>
         <div class="col-md-2 mb-5">
-          <img src="../img/everest.jpg" class="work__personal-siteImg" alt="">
+          <img src="img/everest.jpg" class="work__personal-siteImg" alt="">
           <p class="text-center m-auto py-3 work__personal-text">Mt.Everest Website</p>
           <button type="button" class="btn btn-primary btn-block work__personal-button" data-toggle="modal" data-target="#everest">
+            Learn More
+          </button>
+        </div>
+        
+        <div class="col-md-2 mb-5">
+          <img src="img/real-estate.jpg" class="work__personal-siteImg" alt="">
+          <p class="text-center m-auto py-3 work__personal-text">Real Estate Finder</p>
+          <button type="button" class="btn btn-primary btn-block work__personal-button" data-toggle="modal" data-target="#real-estate">
+            Learn More
+          </button>
+        </div>
+        
+        <div class="col-md-2 mb-5">
+          <img src="img/concert.jpg" class="work__personal-siteImg" alt="">
+          <p class="text-center m-auto py-3 work__personal-text">Wu Tang Clan Tour</p>
+          <button type="button" class="btn btn-primary btn-block work__personal-button" data-toggle="modal" data-target="#concert">
             Learn More
           </button>
         </div>
@@ -344,7 +361,6 @@
   </div>
 </div>
 
-
 <!-- Modal barber -->
 <div class="modal fade" id="barber" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -366,6 +382,7 @@
       </div>
     </div>
   </div>
+
 <!-- Modal Masseuse -->
 <div class="modal fade" id="masseuse" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -387,27 +404,72 @@
       </div>
     </div>
   </div>
+
 <!-- Modal Everest -->
 <div class="modal fade" id="everest" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Mt.Everest Site</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img src="../img/everest-modal.jpg" class="work__modal-barber" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
-        </div>
-        <div class="modal-footer">
-            <a href="mock-up sites/everest/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Mt.Everest Site</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../img/everest-modal.jpg" class="work__modal-barber" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
+      </div>
+      <div class="modal-footer">
+          <a href="mock-up sites/everest/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
+</div>
+
+<!-- Modal Real Estate -->
+<div class="modal fade" id="real-estate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Real Estate Finder</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../img/real-estate-modal.jpg" class="work__modal-barber" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
+      </div>
+      <div class="modal-footer">
+          <a href="mock-up sites/real-estate/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Real Estate -->
+<div class="modal fade" id="concert" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Wu Tang Clan Tour</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../img/concert-modal.jpg" class="work__modal-barber" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
+      </div>
+      <div class="modal-footer">
+          <a href="mock-up sites/concert/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

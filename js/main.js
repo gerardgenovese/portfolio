@@ -301,6 +301,15 @@ setDate();
 
 
 
+
+
+
+setTimeout(function(){
+  document.querySelector('.twinkling').style.opacity = '1';
+},2000);
+
+
+
 //When scrolling add class 
 window.onscroll = function() {
   let scroll = window.pageYOffset;
@@ -310,17 +319,12 @@ window.onscroll = function() {
   if (scroll > 200) {
 
     //FRONT END EXPERIENCE display header 
-    document.querySelector('.about__font-main-header').classList.add('about__font-main-header-add')
+    document.querySelector('.development__main-header').classList.add('development__main-header-add')
 
-    //display icons
-    document.querySelector('.about__font-responsive').classList.add('about__font-responsive-add')
-    document.querySelector('.about__font-newspaper').classList.add('about__font-newspaper-add')
-    document.querySelector('.about__font-dynamic').classList.add('about__font-dynamic-add')
-
-    //display headers/text
-    document.querySelector('.about__font-responsive-body').classList.add('about__font-responsive-add')
-    document.querySelector('.about__font-newspaper-body').classList.add('about__font-newspaper-add')
-    document.querySelector('.about__font-dynamic-body').classList.add('about__font-dynamic-add')
+    //display development
+    document.querySelector('.development__body').classList.add('development__body-add')
+    document.querySelector('.development__body-2').classList.add('development__body-2-add')
+    document.querySelector('.development__body-3').classList.add('development__body-3-add')
   }
 
   //learn about me section
@@ -356,6 +360,9 @@ window.onscroll = function() {
     document.querySelector('.about__mongoDB-bar').classList.add('about__mongoDB-bar-add');
     document.querySelector('.about__php-bar').classList.add('about__php-bar-add');
     document.querySelector('.about__mysql-bar').classList.add('about__mysql-bar-add');
+
+    //paragraph
+    document.querySelector('.about__info').classList.add('about__info-add');
   }
 
   // console.log(scroll);

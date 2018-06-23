@@ -1,3 +1,4 @@
+
 //landing
 
 @keyframes fadeIn {
@@ -95,5 +96,44 @@
   }
   100% {
     transform: translate(-50%, -50%);
+  }
+}
+
+//space background
+@keyframes move-twink-back {
+  from {
+    background-position:0 0;
+  }
+  to {
+    background-position:-10000px 5000px;
+  }
+}
+@-webkit-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+
+
+
+
+
+//development
+@keyframes opacityIn {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opaicty: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }

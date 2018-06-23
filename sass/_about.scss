@@ -1,29 +1,21 @@
-.space-bg {
-  width: 100%;
-  height: 50rem;
-  opacity: 0;
-  animation: space 1s ease-in forwards;
-  position:relative;
-}
+// .space-bg {
+//   width: 100%;
+//   height: 50rem;
+//   opacity: 0;
+//   animation: space 1s ease-in forwards;
+//   position:relative;
+// }
 
-.g-space {
-  width: 30%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: gspace 3s ease-in forwards;
-  z-index: 1;
-}
-.bubble-space {
-  width: 30%;
-  position: absolute;
-  top: 3%;
-  right: 5%;
-  animation: fadeIn 1s ease-in forwards;
-  animation-delay: 3s;
-  opacity: 0;
-}
+
+// .bubble-space {
+//   width: 30%;
+//   position: absolute;
+//   top: 3%;
+//   right: 5%;
+//   animation: fadeIn 1s ease-in forwards;
+//   animation-delay: 3s;
+//   opacity: 0;
+// }
 
 // .about__me {
 //   background-color:rgba(247, 242, 242, 0.479);
@@ -126,82 +118,6 @@
 
 
 
-.container__item {
-  margin: 0 auto 0;
-}
-
-
-.star-1 {
-
-  height: .5rem;
-  width: .5rem;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  display: inline-block;
-  margin-left: 5rem;
-  margin-top: 5rem;
-}
-
-.landing-page-container {
-  position:relative;
-  z-index:5;
-  width: 100%;
-  min-height: 100%;
-  height: 100vh;
-  background-image: url('../img/space-bg3.png'); 
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  animation: fadeIn 2s ease-in forwards;
-}
-
-.earth {
-  position:absolute;
-  z-index:1;
-  width: 100%;
-  min-height: 100%;
-  height: 100vh;
-  background-image: url('../img/space-bg4.png'); 
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  animation: fadeIn .2s ease-in forwards;
-}
-
-
-
-
-
-
-
-.coords {
-  color: #e5ebec;
-  font-size: 1rem;
-  display:block;
-  float: right;
-  position: relative;
-  top: 40%;
-  right: 0;
-  z-index:5;
-  letter-spacing: .3rem;
-
-  opacity: .6;
-  transform: rotate(90deg);
-}
-
-
-
-.greeting {
-  display:flex;
-  justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 4rem;
-  font-size: 5rem;
-  font-weight: 400;
-  color: rgb(128, 122, 122);
-  opacity: .5;
-  animation: fadeIn 3s ease-in-out forwards;
-}
 
 
 
@@ -224,22 +140,10 @@
 
 
 
-@keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-@-webkit-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-@-moz-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-@-ms-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
+
+
+
+
 
 // @keyframes move-clouds-back {
 //   from {background-position:0 0;}
@@ -258,28 +162,6 @@
 //   to {background-position:10000px 0;}
 // }
 
-.stars, .twinkling, .clouds {
-position:absolute;
-top:0;
-left:0;
-right:0;
-bottom:0;
-width:100%;
-height:100%;
-display:block;
-}
-
-
-.twinkling{
-background:transparent url('../img/twinkling.png') repeat top center;
-z-index:0;
-
--moz-animation:move-twink-back 200s linear infinite;
--ms-animation:move-twink-back 200s linear infinite;
--o-animation:move-twink-back 200s linear infinite;
--webkit-animation:move-twink-back 200s linear infinite;
-animation:move-twink-back 200s linear infinite;
-}
 
 
 
@@ -590,8 +472,12 @@ animation:move-twink-back 200s linear infinite;
     opacity: 0;
     padding-top: 3rem;
     font-size: 1.5rem;
-    animation: fadeIn 1s forwards;
-    animation-delay: 3.5s;
+
+
+    &-add {
+      animation: fadeIn 1s forwards;
+      animation-delay: 3.5s;
+    }
   } 
 
 

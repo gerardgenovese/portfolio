@@ -1,0 +1,128 @@
+.development {
+
+  &__center {
+    display:block;
+    margin: 0 auto;
+  }
+  &__container {
+    background-color: white;
+    position: relative;
+    z-index:15;
+  }
+
+  &__main-header {
+    opacity: 0;
+    padding: 4rem 0;
+    font-size: 2rem;
+    font-weight:bold;
+    text-transform: uppercase;
+
+    &-add {
+      animation: opacityIn 1s forwards;
+    }
+  }
+
+  &__body {
+    border: none;
+    opacity: 0;
+
+    &-add {
+      animation: opacityIn 1s forwards;
+      animation-delay: .5s;
+    }
+
+    &-text {
+      &__desc1 {
+        font-size:1.5rem;
+      }
+    
+      &-desc2 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &__body-2 {
+    border: none;
+    opacity: 0;
+
+    &-add {
+      animation: opacityIn 1s forwards;
+      animation-delay: 1s;
+    }
+  }
+
+  &__body-3 {
+    border: none;
+    opacity: 0;
+
+    &-add {
+      animation: opacityIn 1s forwards;
+      animation-delay: 1.5s;
+    }
+  }
+
+  &__icon-1 {
+    background-color: rgba(42, 7, 87, 0.904);
+    width: 18rem;
+    height: 14rem;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    display:flex;
+    align-items: center;
+    justify-content:center;
+  }
+
+  &__icon-2 {
+    background-color: rgba(42, 7, 87, 0.904);
+    width: 16rem;
+    height: 14rem;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display:flex;
+    align-items: center;
+    justify-content:center;
+  }
+  &__icon-3 {
+    background-color: rgba(42, 7, 87, 0.904);
+    width: 16rem;
+    height: 14rem;
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    display:flex;
+    align-items: center;
+    justify-content:center;
+
+  }
+
+}
+
+
+
+.fa-tv {
+  color:white;
+  font-size: 6rem;
+
+}
+.fa-mobile-alt {
+  color:white;
+  font-size: 4rem;
+
+}
+
+.fa-newspaper {
+  color:white;
+  font-size: 7rem;
+  display:block;
+  margin: 0 auto;
+
+}
+
+.fa-dna {
+  color:white;
+  font-size: 7rem;
+  display:block;
+  margin: 0 auto;
+}
+
+
+
