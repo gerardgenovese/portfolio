@@ -224,7 +224,7 @@
           <div class="work__overlay">
 
             <p class="work__desc text-center"> News/Media Blog.</p>
-            <button class="btn text-dark work__button" data-toggle="modal" data-target="#myModal-blog">Learn More</button>
+            <button class="btn text-dark work__button" data-toggle="modal" data-target="#blog">Learn More</button>
           </div>
         </div>
         <div class="container card work__container">
@@ -232,7 +232,7 @@
           <div class="work__overlay work__overlay2">
 
             <p class="work__desc work__desc2 text-center">Construction Company Website.</p>
-            <button class="btn text-dark work__button work__button2" data-toggle="modal" data-target="#myModal-proform">Learn More</button>
+            <button class="btn text-dark work__button work__button2" data-toggle="modal" data-target="#proform">Learn More</button>
           </div>
         </div>
         <div class="container card work__container">
@@ -240,7 +240,7 @@
           <div class="work__overlay work__overlay3">
 
             <p class="work__desc work__desc3 text-center">Home Inspector's Website.</p>
-            <button class="btn text-dark work__button work__button3" data-toggle="modal" data-target="#myModal-rightpath">Learn More</button>
+            <button class="btn text-dark work__button work__button3" data-toggle="modal" data-target="#rightpath">Learn More</button>
           </div>
         </div>
       </div>
@@ -289,17 +289,128 @@
           </button>
         </div>
         
+        <div class="col-md-2 mb-5">
+          <img src="img/dancing.jpg" class="work__personal-siteImg" alt="">
+          <p class="text-center m-auto py-3 work__personal-text">Salsa Dancing</p>
+          <button type="button" class="btn btn-primary btn-block work__personal-button" data-toggle="modal" data-target="#dancing">
+            Learn More
+          </button>
+        </div>
       </div>
     </div>
-    
+      
+
+
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-body py-5 work__experience">
+            <!-- <h3 class="text-center">Car Site</h3>
+            <p class="text-center">Build your own car and "purchase" it.</p> -->
+            <div class="card-deck car-container">
+              <div class="container card work__container">
+                <img src="img/carsite.jpg" alt="car" class="work__image">
+                <div class="work__overlay work__overlay4">
+      
+                  <p class="work__desc work__desc4 text-center">Car Site.</p>
+                  <button class="btn text-dark work__button work__button4" data-toggle="modal" data-target="#carsite">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 car-info">
+          <h3>Car Site</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quas illo dolor? Expedita provident nulla in, explicabo dolore non pariatur laudantium animi minima fugiat ipsum impedit culpa nam odit sunt.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
 
 
   </div><!--work end-->
 
 
+<!-- Modal blog -->
+<div class="modal fade" id="blog" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Executive Telegraph</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/modal/blog-modal.jpg" class="work__modal-image" alt="">
+        <p class="work__modal-info">Executive Telegraph is a News/Media blog site created using a WordPress theme. I created a logo, customized widgets, and uploaded various blog posts about different current events. I used google adsense to monitize the site.</p>
+      </div>
+      <div class="modal-footer">
+          <a href="http://executivetelegraph.com" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal proform construction -->
+<div class="modal fade" id="proform" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">ProForm Construction</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/modal/proform-modal.jpg" class="work__modal-image" alt="">
+        <p class="work__modal-info">Proform Construction LLC is a NY based construction company looking to make an impact within the world of unionized construction. I created the site using HTML5, CSS3, SASS, Bootstrap and used PHP for the connection for the contact page to the C.E.O's business email. I created the logo with Adobe Photoshop.</p>
+      </div>
+      <div class="modal-footer">
+          <a href="http://proformllc.com" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Right Path Home Inspections -->
+<div class="modal fade" id="rightpath" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Right Path Home Inspections</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/modal/rightpath-modal.jpg" class="work__modal-image" alt="">
+        <p class="work__modal-info">Right Path Home Inspections was creatd for a home inspection business. I created their custom logo in Adobe Photoshop and built the site using HTML5, CSS3, SASS, Bootstrap, and used PHP to connect the contact page to his business email.</p>
+      </div>
+      <div class="modal-footer">
+          <a href="http://rightpathinspections.com" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+
 
 <!-- MODAL Blog -->
-<div class="modal fade" id="myModal-blog">
+<!-- <div class="modal fade" id="myModal-blog">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
@@ -308,7 +419,7 @@
       </div>
     
       <div class="">
-        <img src="img/blog-modal.jpg" class="work__modal-img" alt="">
+        <img src="img/modal/blog-modal.jpg" class="work__modal-img" alt="">
         <p class="work__modal-info">Executive Telegraph is a News/Media blog site created using a WordPress theme. I created a logo, customized widgets, and uploaded various blog posts about different current events. I used google adsense to monitize the site. </p>
       </div>
       <div class="modal-footer">
@@ -317,31 +428,12 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
-<!-- MODAL proform -->
-<div class="modal fade" id="myModal-proform">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">ProForm Construction</h5>
-        <button class="close" data-dismiss="modal">&times;</button>
-      </div>
-    
-      <div class="">
-        <img src="img/proform-modal.jpg" class="work__modal-img" alt="">
-        <p class="work__modal-info">Proform Construction LLC is a NY based construction company looking to make an impact within the world of unionized construction. I created the site using HTML5, CSS3, SASS, Bootstrap and used PHP for the connection for the contact page to the C.E.O's business email. I created the logo with Adobe Photoshop.  </p>
-      </div>
-      <div class="modal-footer">
-      <a href="http://proformllc.com" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
-        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 <!-- MODAL rightpath -->
-<div class="modal fade" id="myModal-rightpath">
+<div class="modal fade" id="rightpath">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
@@ -350,7 +442,7 @@
       </div>
     
       <div class="">
-        <img src="img/rightpath.jpg" class="work__modal-img" alt="">
+        <img src="img/modal/rightpath-modal.jpg" class="work__modal-image" alt="">
         <p class="work__modal-info">Right Path Home Inspections was creatd for a home inspection business. I created their custom logo in Adobe Photoshop and built the site using HTML5, CSS3, SASS, Bootstrap, and used PHP to connect the contact page to his business email. </p>
       </div>
       <div class="modal-footer">
@@ -363,25 +455,25 @@
 
 <!-- Modal barber -->
 <div class="modal fade" id="barber" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Barber Site</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img src="../img/barbershop-modal.jpg" class="work__modal-barber" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
-        </div>
-        <div class="modal-footer">
-            <a href="mock-up sites/barber-site/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Barber Site</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../img/modal/barbershop-modal.jpg" class="work__modal-image" alt="">
+        <p class="work__modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
+      </div>
+      <div class="modal-footer">
+          <a href="mock-up sites/barber-site/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
+</div>
 
 <!-- Modal Masseuse -->
 <div class="modal fade" id="masseuse" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -394,8 +486,8 @@
           </button>
         </div>
         <div class="modal-body">
-          <img src="../img/massage-modal.jpg" class="work__modal-barber" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
+          <img src="../img/modal/massage-modal.jpg" class="work__modal-image" alt="">
+          <p class="work__modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
         </div>
         <div class="modal-footer">
             <a href="mock-up sites/massage/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
@@ -416,8 +508,8 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="../img/everest-modal.jpg" class="work__modal-barber" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
+        <img src="../img/modal/everest-modal.jpg" class="work__modal-image" alt="">
+        <p class="work__modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
       </div>
       <div class="modal-footer">
           <a href="mock-up sites/everest/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
@@ -438,8 +530,8 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="../img/real-estate-modal.jpg" class="work__modal-barber" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
+        <img src="../img/modal/real-estate-modal.jpg" class="work__modal-image" alt="">
+        <p class="work__modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
       </div>
       <div class="modal-footer">
           <a href="mock-up sites/real-estate/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
@@ -449,7 +541,7 @@
   </div>
 </div>
 
-<!-- Modal Real Estate -->
+<!-- Modal Concert -->
 <div class="modal fade" id="concert" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -460,11 +552,56 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="../img/concert-modal.jpg" class="work__modal-barber" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
+        <img src="../img/modal/concert-modal.jpg" class="work__modal-image" alt="">
+        <p class="work__modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
       </div>
       <div class="modal-footer">
           <a href="mock-up sites/concert/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Dancing -->
+<div class="modal fade" id="dancing" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Salsa Dancing Lessons</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../img/modal/dancing-modal.jpg" class="work__modal-image" alt="">
+        <p class="work__modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate libero deserunt odit? Architecto, cum sit, qui dolores porro perferendis nesciunt vero possimus illo temporibus reprehenderit labore reiciendis itaque est.</p>
+      </div>
+      <div class="modal-footer">
+          <a href="https://damp-savannah-55352.herokuapp.com/" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal carsite -->
+<div class="modal fade" id="carsite" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Build Your Car</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../img/modal/carsite-modal.jpg" class="work__modal-image" alt="">
+        <p class="work__modal-info">A functional web app that allows you to choose a car, pick it's color, accessories and "purchase" it.</p>
+      </div>
+      <div class="modal-footer">
+          <a href="https://carsiteapp.herokuapp.com/" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>

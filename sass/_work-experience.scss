@@ -13,9 +13,10 @@
     }
   }
 
-  &__image {
-    height: 40rem;
+  &__modal-image {
+    width: 100%;
   }
+
 
   &__overlay {
     position: absolute;
@@ -88,4 +89,17 @@
 
 #myModal-blog {
   overflow-y:hidden;
+}
+
+
+
+.car-container {
+  // width: 30%;
+  // display:block;
+  // margin: 0 auto;
+}
+
+.car-info {
+  display: block;
+  margin: auto auto;
 }

@@ -835,8 +835,8 @@ i {
   .work__container:hover .work__overlay {
     opacity: 1; }
 
-.work__image {
-  height: 40rem; }
+.work__modal-image {
+  width: 100%; }
 
 .work__overlay {
   position: absolute;
@@ -895,6 +895,10 @@ i {
 #myModal-blog {
   overflow-y: hidden; }
 
+.car-info {
+  display: block;
+  margin: auto auto; }
+
 body.modal-open {
   overflow: visible;
   padding: 0 !important; }
@@ -907,6 +911,3 @@ body.modal-open {
 
 .work__personal-button {
   border-radius: 0 !important; }
-
-.work__modal-barber {
-  width: 100%; }
