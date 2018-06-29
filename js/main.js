@@ -494,20 +494,20 @@ document.querySelector('.work__overlay3').addEventListener('mouseout', function(
 });
 
 //CarSite
-document.querySelector('.work__overlay4').addEventListener('mouseover', function(){
+// document.querySelector('.work__overlay4').addEventListener('mouseover', function(){
 
-  document.querySelector('.work__desc4').classList.add('work__desc-add');
-  document.querySelector('.work__button4').classList.add('work__button-add'); 
-});
-//on hover off animate back
-document.querySelector('.work__overlay4').addEventListener('mouseout', function(){
+//   document.querySelector('.work__desc4').classList.add('work__desc-add');
+//   document.querySelector('.work__button4').classList.add('work__button-add'); 
+// });
+// //on hover off animate back
+// document.querySelector('.work__overlay4').addEventListener('mouseout', function(){
 
-  document.querySelector('.work__desc4').classList.remove('work__desc-add');
-  document.querySelector('.work__desc4').style.transition = ".5s";
+//   document.querySelector('.work__desc4').classList.remove('work__desc-add');
+//   document.querySelector('.work__desc4').style.transition = ".5s";
 
-  document.querySelector('.work__button4').classList.remove('work__button-add');
-  document.querySelector('.work__button4').style.transition = ".5s";
-});
+//   document.querySelector('.work__button4').classList.remove('work__button-add');
+//   document.querySelector('.work__button4').style.transition = ".5s";
+// });
 
 
 

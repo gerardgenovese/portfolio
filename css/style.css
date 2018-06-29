@@ -828,12 +828,17 @@ i {
 
 .work__experience {
   border: none; }
+  .work__experience-title--info {
+    font-size: 1.3rem; }
 
 .work__container {
   position: relative;
   padding: 0; }
   .work__container:hover .work__overlay {
     opacity: 1; }
+
+.work__image {
+  width: 100%; }
 
 .work__modal-image {
   width: 100%; }
@@ -880,9 +885,15 @@ i {
     background-color: #5050c9;
     color: #e4d8d8 !important;
     transition: .5s; }
-
-.work .modal-body {
-  padding: 0 !important; }
+  .work__button-car {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #5050c9;
+    font-size: 20px; }
+    .work__button-car:hover {
+      background-color: #5050c9;
+      color: #e4d8d8 !important;
+      transition: .5s; }
 
 .work__modal-img {
   width: 100%;
@@ -890,12 +901,16 @@ i {
 
 .work__modal-info {
   font-size: 1.2rem;
-  padding: 2rem; }
+  padding: 2rem;
+  text-align: center; }
+
+.modal-body {
+  padding: 0 !important; }
 
 #myModal-blog {
   overflow-y: hidden; }
 
-.car-info {
+.car__info-center {
   display: block;
   margin: auto auto; }
 
