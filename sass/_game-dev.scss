@@ -1,0 +1,46 @@
+.games {
+
+  &__row {
+    background-color: rgb(216, 216, 233);
+  }
+
+  &__col {
+    width: 100%;
+    // box-shadow: 1px 1px 3px rgb(170, 158, 158);
+    display:block;
+    margin: 0 auto;
+    padding: 0;
+    transition: .5s;
+    &:hover {
+      transform:scale(1.02);
+      box-shadow: 2px 2px 4px rgb(170, 158, 158);
+    }
+  }
+
+  &__img {
+    display:block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__text {
+    text-align:center;
+  }
+
+  &__button {
+    background-color:transparent;
+    color: white;
+    border: 2px solid rgb(80, 80, 201);
+    font-size: 20px;
+    display:block;
+    margin: 0 auto;
+
+    &:hover {
+      background-color: rgb(80, 80, 201);
+      color:rgb(228, 216, 216) !important;
+      transition: .5s;
+    }
+  }
+}
+
+

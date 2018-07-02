@@ -70,7 +70,8 @@
         <ul class="navigation__list">
           <li class="navigation__item" onclick="linkChecked()"><a href="#" class="navigation__link port-item" data-toggle="collapse" data-target="#home"><span>01</span>About Gerard</a></li>
           <li class="navigation__item" onclick="linkChecked()"><a href="#" class="navigation__link port-item" data-toggle="collapse" data-target="#work-experience"><span>02</span>Work Experience</a></li>
-          <!-- <li class="navigation__item" data-toggle="collapse" data-target="#work"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
+          <li class="navigation__item" onclick="linkChecked()"><a href="#" class="navigation__link port-item" data-toggle="collapse" data-target="#games"><span>02</span>Game Development</a></li>
+          <!-- <li class="navigation__item" data-toggle="collapse" data-target="#games"><a href="#" class="navigation__link"><span>03</span>Game Development</a></li>
           <li class="navigation__item" data-toggle="collapse" data-target="#contact"><a href="#" class="navigation__link"><span>04</span>Stories</a></li> -->
         </ul>
       </nav>
@@ -107,7 +108,7 @@
         <div class="stars"></div>
         <div class="twinkling"></div>
 
-        <img class="space__astronaut" src="img/astronout2.png" alt="">
+        <img class="space__astronaut" src="img/space/astronout2.png" alt="">
         <div class="space__greeting">Reach the stars</div>
         <p class="space__coords">G 4H&#176; 1R' 3M.G3R" / A R&#176; D2' H1.73" </p> 
       </div>
@@ -213,14 +214,14 @@
         
 
   <!--Work-->
-  <div id="work-experience" class="collapse show">
+  <div id="work-experience" class="collapse">
 
     <div class="card card-body py-5 work__experience">
       <h3>Work Experience</h3>
       <p class="work__experience-title--info">I started doing freelance Web Design to gain some much needed exprience in the industry.</p>
       <div class="card-deck">
         <div class="container card work__container">
-          <img src="img/blog.jpg" alt="Avatar" class="work__image">
+          <img src="img/work/blog.jpg" alt="Avatar" class="work__image">
           <div class="work__overlay">
 
             <p class="work__desc text-center"> News/Media Blog.</p>
@@ -228,7 +229,7 @@
           </div>
         </div>
         <div class="container card work__container">
-          <img src="img/proform.jpg" alt="Avatar" class="work__image">
+          <img src="img/work/proform.jpg" alt="Avatar" class="work__image">
           <div class="work__overlay work__overlay2">
 
             <p class="work__desc work__desc2 text-center">Construction Company Website.</p>
@@ -236,7 +237,7 @@
           </div>
         </div>
         <div class="container card work__container">
-          <img src="img/rightpath.jpg" alt="Avatar" class="work__image">
+          <img src="img/work/rightpath.jpg" alt="Avatar" class="work__image">
           <div class="work__overlay work__overlay3">
 
             <p class="work__desc work__desc3 text-center">Home Inspector's Website.</p>
@@ -252,21 +253,21 @@
         <p class="work__experience-title--info">Mock-up static web sites.</p>
       <div class="row">
         <div class="col-md-2 mb-5">
-          <img src="img/scissors.png" class="work__personal-siteImg" alt="">
+          <img src="img/work/scissors.png" class="work__personal-siteImg" alt="">
           <p class="text-center m-auto py-3 work__personal-text">Barbershop Website</p>
           <button type="button" class="btn btn-primary btn-block work__personal-button" data-toggle="modal" data-target="#barber">
             Learn More
           </button>
         </div>
         <div class="col-md-2 mb-5">
-          <img src="img/massage.jpg" class="work__personal-siteImg" alt="">
+          <img src="img/work/massage.jpg" class="work__personal-siteImg" alt="">
           <p class="text-center m-auto py-3 work__personal-text">Masseuse Website</p>
           <button type="button" class="btn btn-primary btn-block work__personal-button" data-toggle="modal" data-target="#masseuse">
             Learn More
           </button>
         </div>
         <div class="col-md-2 mb-5">
-          <img src="img/everest.jpg" class="work__personal-siteImg" alt="">
+          <img src="img/work/everest.jpg" class="work__personal-siteImg" alt="">
           <p class="text-center m-auto py-3 work__personal-text">Mt.Everest Website</p>
           <button type="button" class="btn btn-primary btn-block work__personal-button" data-toggle="modal" data-target="#everest">
             Learn More
@@ -274,7 +275,7 @@
         </div>
         
         <div class="col-md-2 mb-5">
-          <img src="img/real-estate.jpg" class="work__personal-siteImg" alt="">
+          <img src="img/work/real-estate.jpg" class="work__personal-siteImg" alt="">
           <p class="text-center m-auto py-3 work__personal-text">Real Estate Finder</p>
           <button type="button" class="btn btn-primary btn-block work__personal-button" data-toggle="modal" data-target="#real-estate">
             Learn More
@@ -282,7 +283,7 @@
         </div>
         
         <div class="col-md-2 mb-5">
-          <img src="img/concert.jpg" class="work__personal-siteImg" alt="">
+          <img src="img/work/concert.jpg" class="work__personal-siteImg" alt="">
           <p class="text-center m-auto py-3 work__personal-text">Wu Tang Clan Tour</p>
           <button type="button" class="btn btn-primary btn-block work__personal-button" data-toggle="modal" data-target="#concert">
             Learn More
@@ -290,7 +291,7 @@
         </div>
         
         <div class="col-md-2 mb-5">
-          <img src="img/dancing.jpg" class="work__personal-siteImg" alt="">
+          <img src="img/work/dancing.jpg" class="work__personal-siteImg" alt="">
           <p class="text-center m-auto py-3 work__personal-text">Salsa Dancing</p>
           <button type="button" class="btn btn-primary btn-block work__personal-button" data-toggle="modal" data-target="#dancing">
             Learn More
@@ -307,8 +308,8 @@
         <div class="col-md-4">
           <div class="py-5 work__experience">
             <div class="">
-              <div class="container work__container-car">
-                <img src="img/carsite.jpg" alt="car" class="work__image">
+              <div class="container">
+                <img src="img/work/carsite.jpg" alt="car" class="work__image">
               </div>
             </div>
           </div>
@@ -321,15 +322,32 @@
       </div>
     </div>
 
+    <hr class="hr-1">
 
-
-
-
-
-
+<!--GIJOE-->
+    <div class="container mt-5 pt-5">
+        <h3 class="text-center">G.I. Joe Directory</h3>
+      <div class="row">
+        <div class="col-md-12 joe__experience">
+          <img src="img/work/all-joe.jpg" alt="GIJoe" class="joe__image">
+        </div>
+        <div class="col-md-12 text-center"> 
+          <p>A G.I. Joe directory. Search for all your favorite characters!</p>
+          <button class="btn text-dark joe__button mt-5" data-toggle="modal" data-target="#joe">Learn More</button>
+        </div>
+      </div>
+    </div>
 
 
   </div><!--work end-->
+
+
+
+
+
+
+
+
 
 
 <!-- Modal blog -->
@@ -344,7 +362,7 @@
       </div>
       <div class="modal-body">
         <img src="img/modal/blog-modal.jpg" class="work__modal-image" alt="">
-        <p class="work__modal-info">Executive Telegraph is a News/Media blog site created using a WordPress theme. I created a logo, customized widgets, and uploaded various blog posts about different current events. I used google adsense to monitize the site.</p>
+        <p class="work__modal-info">Executive Telegraph is my News/Media blog site created using a WordPress theme. I created a logo, customized widgets, and uploaded various blog posts about different current events. I used google adsense to monitize the site. Deployed using HostGator.</p>
       </div>
       <div class="modal-footer">
           <a href="http://executivetelegraph.com" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
@@ -366,7 +384,7 @@
       </div>
       <div class="modal-body">
         <img src="img/modal/proform-modal.jpg" class="work__modal-image" alt="">
-        <p class="work__modal-info">Proform Construction LLC is a NY based construction company looking to make an impact within the world of unionized construction. I created the site using HTML5, CSS3, SASS, Bootstrap and used PHP for the connection for the contact page to the C.E.O's business email. I created the logo with Adobe Photoshop.</p>
+        <p class="work__modal-info">Proform Construction LLC is a NY based construction company looking to make an impact within the world of unionized construction. I created the site using HTML5, CSS3, SASS, Bootstrap4 and used PHP for the connection for the contact page to the C.E.O's business email. I created the logo and edited images with Adobe Photoshop. Deployed using HostGator.</p>
       </div>
       <div class="modal-footer">
           <a href="http://proformllc.com" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
@@ -388,58 +406,11 @@
       </div>
       <div class="modal-body">
         <img src="img/modal/rightpath-modal.jpg" class="work__modal-image" alt="">
-        <p class="work__modal-info">Right Path Home Inspections was creatd for a home inspection business. I created their custom logo in Adobe Photoshop and built the site using HTML5, CSS3, SASS, Bootstrap, and used PHP to connect the contact page to his business email.</p>
+        <p class="work__modal-info">Right Path Home Inspections was created for a home inspection business. I edited all images and created the custom logo in Adobe Photoshop. I built the site using HTML5, CSS3, SASS, Bootstrap4, and used PHP to connect the contact page to his business email. Deployed using HostGator.</p>
       </div>
       <div class="modal-footer">
           <a href="http://rightpathinspections.com" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
- 
-
-
-<!-- MODAL Blog -->
-<!-- <div class="modal fade" id="myModal-blog">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Executive Telegraph</h5>
-        <button class="close" data-dismiss="modal">&times;</button>
-      </div>
-    
-      <div class="">
-        <img src="img/modal/blog-modal.jpg" class="work__modal-img" alt="">
-        <p class="work__modal-info">Executive Telegraph is a News/Media blog site created using a WordPress theme. I created a logo, customized widgets, and uploaded various blog posts about different current events. I used google adsense to monitize the site. </p>
-      </div>
-      <div class="modal-footer">
-      <a href="http://executivetelegraph.com" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
-        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-
-
-<!-- MODAL rightpath -->
-<div class="modal fade" id="rightpath">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Right Path Home Inspections</h5>
-        <button class="close" data-dismiss="modal">&times;</button>
-      </div>
-    
-      <div class="">
-        <img src="img/modal/rightpath-modal.jpg" class="work__modal-image" alt="">
-        <p class="work__modal-info">Right Path Home Inspections was creatd for a home inspection business. I created their custom logo in Adobe Photoshop and built the site using HTML5, CSS3, SASS, Bootstrap, and used PHP to connect the contact page to his business email. </p>
-      </div>
-      <div class="modal-footer">
-      <a href="http://rightpathinspections.com" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
-        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -457,7 +428,7 @@
       </div>
       <div class="modal-body">
         <img src="../img/modal/barbershop-modal.jpg" class="work__modal-image" alt="">
-        <p class="work__modal-info">A mock-up site for a babershop. Created with HTML5, CSS3, with a focus on using flexbox.</p>
+        <p class="work__modal-info">A mock-up site for a babershop. Created with HTML5 and CSS3, with a focus on using flexbox.</p>
       </div>
       <div class="modal-footer">
           <a href="mock-up sites/barber-site/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
@@ -523,7 +494,7 @@
       </div>
       <div class="modal-body">
         <img src="../img/modal/real-estate-modal.jpg" class="work__modal-image" alt="">
-        <p class="work__modal-info">A mock-up site with a landing page for a Real Estate House Finder. Created with HTML5, CSS3, Sass, and JavaScript.</p>
+        <p class="work__modal-info">A mock-up site landing page for a Real Estate House Finder. Created with HTML5, CSS3, Sass, and JavaScript.</p>
       </div>
       <div class="modal-footer">
           <a href="mock-up sites/real-estate/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
@@ -545,7 +516,7 @@
       </div>
       <div class="modal-body">
         <img src="../img/modal/concert-modal.jpg" class="work__modal-image" alt="">
-        <p class="work__modal-info">A mock-up site for a Wu Tang Clan Tour. Created with HTML5, CSS3, Bootstrap4, and JavaScript for single-page scrolling functionality.</p>
+        <p class="work__modal-info">A mock-up site for a Wu Tang Clan Tour. Created with HTML5, CSS3, Bootstrap4, and JavaScript using a single-page scrolling functionality.</p>
       </div>
       <div class="modal-footer">
           <a href="mock-up sites/concert/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
@@ -567,7 +538,7 @@
       </div>
       <div class="modal-body">
         <img src="../img/modal/dancing-modal.jpg" class="work__modal-image" alt="">
-        <p class="work__modal-info">A mock-up site for a personal Salsa Instructor. Created with HTML5, CSS3, and Bootstrap4.</p>
+        <p class="work__modal-info">A mock-up site for a personal Salsa Instructor. Created with HTML5, CSS3, and Bootstrap4. I used Express.JS with EJS to deploy it to Heroku.</p>
       </div>
       <div class="modal-footer">
           <a href="https://damp-savannah-55352.herokuapp.com/" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
@@ -590,7 +561,29 @@
       </div>
       <div class="modal-body">
         <img src="../img/modal/carsite-modal.jpg" class="work__modal-image" alt="">
-        <p class="work__modal-info">This project was created with HTML5, CSS3, Sass, and JavaScript.</p>
+        <p class="work__modal-info">This project was created with HTML5, CSS3, Sass, and JavaScript. I used Express.JS with EJS to deploy it to Heroku.</p>
+      </div>
+      <div class="modal-footer">
+          <a href="https://carsiteapp.herokuapp.com/" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal GIJOE -->
+<div class="modal fade" id="joe" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">G.I. Joe Directory</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="../img/modal/joe-logo-modal.PNG" class="work__modal-image" alt="">
+        <p class="work__modal-info">This Web App lets you search for individual G.I. Joe characters and the data is fetched via a JSON file and returned dynamically with no page loading. Created with HTML5, CSS3, and JavaScript.</p>
       </div>
       <div class="modal-footer">
           <a href="https://carsiteapp.herokuapp.com/" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
@@ -602,65 +595,127 @@
 
 
 
-    <!--Work-->
-    <div id="work" class="collapse">
-        <div class="card card-body bg-warning py-5">
-            <h3>My Portfolio</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, laboriosam?</p>
-        </div>
-        <div class="card card-body py-5">
-            <h3>What Have I Built?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, minima.</p>
-            <!-- <div class="row no-gutters">
-                <div class="col-md-3">
-                    <a href="http://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox">
-                        <img src="http://unsplash.it/600.jpg?image=251" alt="" class="img-fluid">
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="http://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox">
-                        <img src="http://unsplash.it/600.jpg?image=252" alt="" class="img-fluid">
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="http://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox">
-                        <img src="http://unsplash.it/600.jpg?image=253" alt="" class="img-fluid">
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="http://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox">
-                        <img src="http://unsplash.it/600.jpg?image=254" alt="" class="img-fluid">
-                    </a>
-                </div>
-            </div> -->
 
-            <!-- <div class="row no-gutters">
-                    <div class="col-md-3">
-                        <a href="http://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox">
-                            <img src="http://unsplash.it/600.jpg?image=255" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="http://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox">
-                            <img src="http://unsplash.it/600.jpg?image=256" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="http://unsplash.it/1200/768.jpg?image=257" data-toggle="lightbox">
-                            <img src="http://unsplash.it/600.jpg?image=257" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="http://unsplash.it/1200/768.jpg?image=258" data-toggle="lightbox">
-                            <img src="http://unsplash.it/600.jpg?image=258" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--games-->
+    <div id="games" class="collapse">
+     
+      <div class="container-fluid">
+        <h3>Game Development</h3>
+        <p class="work__experience-title--info">I also enjoy learning about game production and development.</p>
+        <div class="row games__row py-5">
+          <div class="col-md-3 games__col">
+            <img src="img/games/pong.jpg" alt="pong" class="games__img">
+            <p class="games__text">Pong</p>
+            <button class="btn text-dark games__button mt-3 mb-5" data-toggle="modal" data-target="#pong">Learn More</button>
+          </div>
+          <div class="col-md-3 games__col">
+            <img src="img/games/hang-man.jpg" alt="hang-man" class="games__img">
+            <p class="games__text">Hang-Man</p>
+            <button class="btn text-dark games__button mt-3 mb-5" data-toggle="modal" data-target="#hang-man">Learn More</button>
+          </div>
+          <div class="col-md-3 games__col">
+            <img src="img/games/battleship.jpg" alt="battleship" class="games__img">
+            <p class="games__text">Battleship</p>
+            <button class="btn text-dark games__button mt-3 mb-5" data-toggle="modal" data-target="#battleship">Learn More</button>
+          </div>
         </div>
+      </div>
     </div>
 
+
+
+
+
+<!-- Modal PONG -->
+<div class="modal fade" id="pong" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Pong</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="../img/modal/pong-modal.jpg" class="work__modal-image" alt="">
+          <p class="work__modal-info">Play a game of Pong created in HTML5 using Canvas and programmed in JavaScript.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="https://carsiteapp.herokuapp.com/" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal PONG -->
+<div class="modal fade" id="hang-man" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Hang-Man</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="../img/modal/hang-man-modal.jpg" class="work__modal-image" alt="">
+          <p class="work__modal-info">Play a game of Hang-Man created in JavaScript.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="https://carsiteapp.herokuapp.com/" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal PONG -->
+<div class="modal fade" id="battleship" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Battleship</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="../img/modal/battleship-modal.jpg" class="work__modal-image" alt="">
+          <p class="work__modal-info">Play a game of Battleship creating in JavaScript.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="https://carsiteapp.herokuapp.com/" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
     <!--Contact-->
-    <div id="contact" class="collapse">
+    <!-- <div id="contact" class="collapse">
         <div class="card card-body bg-danger text-white py-5">
             <h2>Contact</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, facere.</p>
@@ -696,7 +751,7 @@
                 <input type="submit" value="Submit" class="btn btn-danger btn-block btn-lg">
             </form>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -704,7 +759,7 @@
     <footer id="main-footer" class="mt-5 p-5 bg-dark text-white">
         <div class="row">
             <div class="col-md-6">
-                <a href="#" class="btn btn-outline-light"><i class="fa fa-cloud"></i> Download My Resume</a>
+                <a href="img/portfolio_resume.pdf" download="img/portfolio_resume" class="btn btn-outline-light"><i class="fa fa-cloud"></i> Download My Resume</a>
             </div>
         </div>
     </footer>

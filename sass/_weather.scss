@@ -11,10 +11,6 @@
   align-items: center;
 }
 .pulse {
-  // position: absolute;
-  // top: 5%;
-  // left: 3%;
-  // transform: translate(-50%, -50%);
   width: 50px;
   height: 50px;
   background: url('../img/weather/earth.png');
@@ -50,9 +46,10 @@ i {color: white;}
   color: white;
 }
 .temp {
-  // grid-column: 2/3;
+  grid-column: 5/6;
   color: white;
 }
 #time {
+  grid-column: 3/5;
   color:white;
 }

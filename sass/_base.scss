@@ -24,8 +24,11 @@
 
 // COLORS
 $color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
+// $color-primary-light: #7ed56f;
+// $color-primary-dark: #28b485;
+$color-primary: #1b1361;
+$color-primary-light: #6f79d5;
+$color-primary-dark: #182b80;
 
 $color-secondary-light: #ffb900;
 $color-secondary-dark: #ff7730;
@@ -91,4 +94,29 @@ body {
   max-width: 150rem;
   padding: 0;
   margin: 0 auto;
+}
+
+
+.hr-1 {
+  overflow: visible; /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  width: 50%;
+  display:block;
+  margin: 0 auto;
+  margin-top: 5rem;
+  opacity: .3
+}
+.hr-1:before { /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
 }
