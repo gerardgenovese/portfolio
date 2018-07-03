@@ -41,23 +41,33 @@ function getClick() {
 
 //when nav button is closed hide links in the background from being clicked
 function navClick(e) {
-  let checked = document.querySelector('.navigation__checkbox').checked;
+  const checked = document.querySelector('.navigation__checkbox').checked;
   const navList = document.querySelector('.navigation__list');
+  const navNav = document.querySelector('.navigation__nav');
   
   if (checked === true) {
+  navNav.style.width = '0';
     setTimeout(function(){
       navList.style.display = 'none';
     }, 500);
   } else if (checked === false) {
     navList.style.display = 'block';
+    navNav.style.width = '100%';
   }
 }
+
+
 
 function linkChecked() {
   const navList = document.querySelector('.navigation__list');
   setTimeout(function(){
     navList.style.display = 'none';
   }, 500);
+
+document.querySelector('.navigation__nav').style.width = '0';
+document.querySelector('.navigation__checkbox').checked = false;
+
+  
 }
 
 

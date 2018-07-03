@@ -26,6 +26,12 @@
       //     top: 3rem;
       //     right: 3rem;
       // }
+
+      @include respond(phone) {
+        height: 4rem;
+        width: 4rem;
+        top: -5.5rem;
+      }
   }
 
   &__background {
@@ -64,12 +70,13 @@
       height: 100vh;
       position: fixed;
       top: 0;
-      // left: -20%;
       left: 0;
       z-index: 1500;
 
       opacity: 0;
-      width: 0;
+      // width: 0;
+      width: 100%;
+      transform: translateX(-50%);
       transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
    
   }
@@ -125,7 +132,8 @@
 
   &__checkbox:checked ~ &__nav {
       opacity: 1;
-      width: 100%;
+      // width: 100%;
+      transform: translateX(0);
 
   }
 
@@ -136,6 +144,11 @@
       // margin-top: 3.5rem;
       margin-top: 3rem;
 
+      @include respond(phone) {
+        margin-top: 2rem;
+
+      }
+
       &,
       &::before,
       &::after {
@@ -143,6 +156,10 @@
           height: 2px;
           background-color: $color-grey-dark-3;
           display: inline-block;
+
+          @include respond(phone) {
+            width: 2.8rem;  
+          }
       }
 
       &::before,
@@ -153,16 +170,37 @@
           transition: all .2s;
       }
 
-      &::before { top: -.8rem; }
-      &::after { top: .8rem; }
+      &::before { 
+        top: -.8rem; 
+
+        @media screen and (max-width:768px) {
+          top: -.6rem;
+        }
+
+      }
+      &::after { 
+        top: .8rem; 
+
+        @media screen and (max-width:768px) {
+          top: .6rem;
+        }
+      }
   }
 
   &__button:hover &__icon::before {
       top: -1rem;
+
+      @media screen and (max-width:768px) {
+        top: -.6rem;
+      }
   }
 
   &__button:hover &__icon::after {
       top: 1rem;
+
+      @media screen and (max-width:768px) {
+        top: .6rem;
+      }
   }
 
   &__checkbox:checked + &__button &__icon {

@@ -158,6 +158,65 @@ body {
   100% {
     opacity: 1; } }
 
+@keyframes html5 {
+  100% {
+    opacity: 1;
+    height: 100%; } }
+
+@keyframes css3 {
+  100% {
+    opacity: 1;
+    height: 90%; } }
+
+@keyframes bootstrap {
+  100% {
+    opacity: 1;
+    height: 90%; } }
+
+@keyframes sass {
+  100% {
+    opacity: 1;
+    height: 85%; } }
+
+@keyframes javascript {
+  100% {
+    opacity: 1;
+    height: 75%; } }
+
+@keyframes express {
+  100% {
+    opacity: 1;
+    height: 50%; } }
+
+@keyframes mongoDB {
+  100% {
+    opacity: 1;
+    height: 40%; } }
+
+@keyframes php {
+  100% {
+    opacity: 1;
+    height: 30%; } }
+
+@keyframes mysql {
+  100% {
+    opacity: 1;
+    height: 35%; } }
+
+@keyframes fromLeftToRight {
+  0% {
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes fromTopDown {
+  0% {
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
 .loading {
   width: 100vw;
   height: 100vh;
@@ -247,10 +306,16 @@ i {
 
 .location {
   color: white; }
+  @media screen and (max-width: 768px) {
+    .location {
+      display: none; } }
 
 .temp {
   grid-column: 5/6;
   color: white; }
+  @media screen and (max-width: 768px) {
+    .temp {
+      display: none; } }
 
 #time {
   grid-column: 3/5;
@@ -351,6 +416,11 @@ i {
     z-index: 2000;
     text-align: center;
     cursor: pointer; }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__button {
+        height: 4rem;
+        width: 4rem;
+        top: -5.5rem; } }
   .navigation__background {
     height: 5rem;
     width: 5rem;
@@ -368,7 +438,8 @@ i {
     left: 0;
     z-index: 1500;
     opacity: 0;
-    width: 0;
+    width: 100%;
+    transform: translateX(-50%);
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
   .navigation__list {
     position: absolute;
@@ -403,15 +474,21 @@ i {
     transform: scale(80); }
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
-    width: 100%; }
+    transform: translateX(0); }
   .navigation__icon {
     position: relative;
     margin-top: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__icon {
+        margin-top: 2rem; } }
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
       width: 3rem;
       height: 2px;
       background-color: #333;
       display: inline-block; }
+      @media only screen and (max-width: 37.5em) {
+        .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+          width: 2.8rem; } }
     .navigation__icon::before, .navigation__icon::after {
       content: "";
       position: absolute;
@@ -419,12 +496,24 @@ i {
       transition: all .2s; }
     .navigation__icon::before {
       top: -.8rem; }
+      @media screen and (max-width: 768px) {
+        .navigation__icon::before {
+          top: -.6rem; } }
     .navigation__icon::after {
       top: .8rem; }
+      @media screen and (max-width: 768px) {
+        .navigation__icon::after {
+          top: .6rem; } }
   .navigation__button:hover .navigation__icon::before {
     top: -1rem; }
+    @media screen and (max-width: 768px) {
+      .navigation__button:hover .navigation__icon::before {
+        top: -.6rem; } }
   .navigation__button:hover .navigation__icon::after {
     top: 1rem; }
+    @media screen and (max-width: 768px) {
+      .navigation__button:hover .navigation__icon::after {
+        top: .6rem; } }
   .navigation__checkbox:checked + .navigation__button .navigation__icon {
     background-color: transparent; }
   .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
@@ -529,16 +618,12 @@ i {
 
 .about {
   width: 100%;
-  height: 60rem;
-  position: relative;
-  z-index: 5;
-  background-color: white;
-  margin-bottom: 20rem; }
+  background-color: white; }
   .about__container {
-    position: absolute;
     z-index: 5;
     margin-top: 5rem;
     width: 100%;
+    height: 100%;
     height: 65rem;
     background-color: #f3ecec;
     -webkit-clip-path: polygon(51% 5%, 100% 0, 100% 100%, 51% 95%, 0 100%, 0 0);
@@ -546,7 +631,8 @@ i {
     @media screen and (max-width: 768px) {
       .about__container {
         clip-path: none;
-        background-color: white; } }
+        background-color: white;
+        height: 100%; } }
   .about__header {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -705,65 +791,6 @@ i {
     .about__info-add {
       animation: fadeIn 1s forwards;
       animation-delay: 3.5s; }
-
-@keyframes html5 {
-  100% {
-    opacity: 1;
-    height: 100%; } }
-
-@keyframes css3 {
-  100% {
-    opacity: 1;
-    height: 90%; } }
-
-@keyframes bootstrap {
-  100% {
-    opacity: 1;
-    height: 90%; } }
-
-@keyframes sass {
-  100% {
-    opacity: 1;
-    height: 85%; } }
-
-@keyframes javascript {
-  100% {
-    opacity: 1;
-    height: 75%; } }
-
-@keyframes express {
-  100% {
-    opacity: 1;
-    height: 50%; } }
-
-@keyframes mongoDB {
-  100% {
-    opacity: 1;
-    height: 40%; } }
-
-@keyframes php {
-  100% {
-    opacity: 1;
-    height: 30%; } }
-
-@keyframes mysql {
-  100% {
-    opacity: 1;
-    height: 35%; } }
-
-@keyframes fromLeftToRight {
-  0% {
-    opacity: 0; }
-  100% {
-    transform: translateX(0);
-    opacity: 1; } }
-
-@keyframes fromTopDown {
-  0% {
-    opacity: 0; }
-  100% {
-    transform: translateY(0);
-    opacity: 1; } }
 
 .development__center {
   display: block;
@@ -966,7 +993,8 @@ i {
   color: white;
   border: 2px solid #5050c9;
   font-size: 20px;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
   .joe__button:hover {
     background-color: #5050c9;
     color: #e4d8d8 !important;

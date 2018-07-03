@@ -99,6 +99,10 @@
   }
 }
 
+
+
+
+
 //space background
 @keyframes move-twink-back {
   from {
@@ -137,3 +141,94 @@
     opacity: 1;
   }
 }
+
+
+
+
+
+
+
+@keyframes html5 {
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}
+@keyframes css3 {
+  100% {
+    opacity: 1;
+    height: 90%;
+  }
+}
+@keyframes bootstrap {
+  100% {
+    opacity: 1;
+    height: 90%;
+  }
+}
+@keyframes sass {
+  100% {
+    opacity: 1;
+    height: 85%;
+  }
+}
+@keyframes javascript {
+  100% {
+    opacity: 1;
+    height: 75%;
+  }
+}
+@keyframes express {
+  100% {
+    opacity: 1;
+    height: 50%;
+  }
+}
+@keyframes mongoDB {
+  100% {
+    opacity: 1;
+    height: 40%;
+  }
+}
+@keyframes php {
+  100% {
+    opacity: 1;
+    height: 30%;
+  }
+}
+@keyframes mysql {
+  100% {
+    opacity: 1;
+    height: 35%;
+  }
+}
+
+
+
+
+
+
+
+
+
+@keyframes fromLeftToRight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform:translateX(0);
+    opacity: 1;
+
+  }
+}
+
+@keyframes fromTopDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
