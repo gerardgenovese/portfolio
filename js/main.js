@@ -1,32 +1,34 @@
 //landing page
 
-// const landingPage = document.querySelector('.bg__image');
-// const loadingPage = document.querySelector('.loading');
-// const webSite = document.querySelector('.page-contain');
+const landingPage = document.querySelector('.bg__image');
+const loadingPage = document.querySelector('.loading');
+const webSite = document.querySelector('.page-contain');
 
-// loadingPage.style.display = 'none';
-// webSite.style.display = 'none';
+loadingPage.style.display = 'none';
+webSite.style.display = 'none';
 
-// const enterSite = document.querySelector('.bg-enter');
-// enterSite.addEventListener('click', enterWebsite);
+const enterSite = document.querySelector('.bg-enter');
+enterSite.addEventListener('click', enterWebsite);
 
-// //click button and loading page then site "loads";
-// function enterWebsite() {
-//   landingPage.style.display = 'none';
-//   loadingPage.style.display = 'block';
+//click button and loading page then site "loads";
+function enterWebsite() {
+  landingPage.style.display = 'none';
+  loadingPage.style.display = 'block';
 
-//   setTimeout(function(){
-//     webSite.style.display = 'block';
-//     loadingPage.style.display = 'none';
-//   },7000);
+  setTimeout(function(){
+    webSite.style.display = 'block';
+    loadingPage.style.display = 'none';
+  },7000);
   
-// }
+}
 
 
 
 //navigation links
 const navLinks = document.querySelectorAll('.navigation__link');
 const navButton = document.querySelector('.navigation__button');
+//set z-index to 0 so the nav menu doesn't site above anything in the background.
+document.querySelector('.navigation__nav').style.zIndex = '0';
 //navigation button to open nav menu
 navButton.addEventListener('click', navClick);
 //loop through navLinks
@@ -44,151 +46,48 @@ function navClick(e) {
   const checked = document.querySelector('.navigation__checkbox').checked;
   const navList = document.querySelector('.navigation__list');
   const navNav = document.querySelector('.navigation__nav');
+  const navigationNAV = document.querySelector('.navigation__nav');
+
   
   if (checked === true) {
   navNav.style.width = '0';
     setTimeout(function(){
       navList.style.display = 'none';
+      navigationNAV.style.zIndex = '-1';
     }, 500);
   } else if (checked === false) {
     navList.style.display = 'block';
     navNav.style.width = '100%';
+    navigationNAV.style.zIndex = '1500';
   }
 }
 
+// setTimeout(function(){
+//   document.querySelector('.navigation__nav').style.width = '0';
+// },500);
 
+// document.querySelector('.navigation__nav').style.width = '0';
 
-function linkChecked() {
-  const navList = document.querySelector('.navigation__list');
-  setTimeout(function(){
-    navList.style.display = 'none';
-  }, 500);
+// function linkChecked() {
+//   const navList = document.querySelector('.navigation__list');
+//   setTimeout(function(){
+//     navList.style.display = 'none';
+//   }, 500);
 
-document.querySelector('.navigation__nav').style.width = '0';
-document.querySelector('.navigation__checkbox').checked = false;
+// document.querySelector('.navigation__nav').style.width = '0';
+// document.querySelector('.navigation__checkbox').checked = false;
 
   
+// }
+function linkChecked() {
+
+  const navigationNAV = document.querySelector('.navigation__nav');
+
+  navigationNAV.style.zIndex = '0';
 }
 
 
-var api = "https://fcc-weather-api.glitch.me/api/current?"
-var lat;
-var lon;
-var tempIcon = 'F';
-var TempInCelsius;
-var TempInFar;
-var windMPH;
-var windKM;
-
-
-
-// var x = document.getElementById("demo");
-// x.innerHTML = getLocation();
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(showPosition){
-      var lat = "lat=" + showPosition.coords.latitude;
-      var lon = "lon=" + showPosition.coords.longitude;
-      getWeather(lat, lon);
-    });
-  } else { 
-      x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-getLocation();
-
-
-function getWeather(lat, lon) {  
-  var apiString = api + lon + "&" + lat;
-  $.ajax({
-    url: apiString, success: function (result) {
-      $("#city").text(result.name + ", ");
-      $("#country").text(result.sys.country);
-
-      TempInCelsius = Math.round(result.main.temp);
-      TempInFar = Math.round(result.main.temp * 9/5 + 32);
-      $("#temp").text(Math.round(result.main.temp * 9/5 + 32) + String.fromCharCode(176));
-      $("#tempicon").text(tempIcon);
-
-      $("#weather").text(result.weather[0].main);
-      $("#wind").text(result.wind.speed + " mph");
-      windMPH = result.wind.speed;
-      windKM = result.wind.speed * 1.6;
-
-      sunRise = result.sys.sunrise;
-      sunRiseDate = new Date(sunRise * 1000);
-      sunRiseTime = sunRiseDate.toLocaleTimeString();
-
-      sunSet = result.sys.sunset;
-      sunSetDate = new Date(sunSet * 1000);
-      sunSetTime = sunSetDate.toLocaleTimeString();
-
-      $("#sunrise").text(sunRiseTime);
-      $("#sunset").text(sunSetTime);
-
-      $("#humidity").text(result.main.humidity + "%");
-
-      var icon = result.weather[0].icon;
-      $("#icon").html("<img src=" + icon + ">");
-
-      // var getBackground = function() {
-      //   var weatherNow = result.weather[0].main;
-        
-      //   if (weatherNow == "Drizzle"){
-      //     var backgroundImg = document.body.style.backgroundImage = "url('img/drizzle.jpg')";
-          
-      //     console.log('Drizzle');
-      //   } else if (weatherNow == "Clouds") {
-      //     var backgroundImg = document.body.style.backgroundImage = "url('img/clouds.jpg')";
-      //     console.log('Clouds');
-
-      //   } else if (weatherNow == "Rain") {
-      //     var backgroundImg = document.body.style.backgroundImage = "url('img/rain.jpg')";
-      //     console.log('Rain');
-          
-      //   } else if (weatherNow == "Clear") {
-      //     var backgroundImg = document.body.style.backgroundImage = "url('img/clear.jpg')";
-      //     console.log('Clear');
-          
-      //   } else if (weatherNow == "Snow") {
-      //     var backgroundImg = document.body.style.backgroundImage = "url('img/snow.jpg')";
-      //     console.log('Snow');
-          
-      //   } else {
-      //     var backgroundImg = document.body.style.backgroundImage = "url('img/thunderstorm.jpg')";
-      //     console.log('Thunderstorm');
-      //   }
-      // }
-      // getBackground();
-    }
-  });
-}
-
-
-  // function changeTemp() {
-  //   var x = document.getElementById("tempicon");
-  //   var y = document.getElementById('temp');
-  //   var z = document.getElementById("wind");
-
-  //   x.addEventListener('click', function(){
-  //     if (x.textContent == 'F'){
-  //       x.innerHTML = 'C';
-  //       y.innerHTML = TempInCelsius + String.fromCharCode(176);
-  //       z.innerHTML = windKM.toFixed(1) + ' kmh';
-  //     } else if (x.textContent != 'F') {
-  //       x.innerHTML = 'F';
-  //       y.innerHTML = TempInFar + String.fromCharCode(176);
-  //       z.innerHTML = windMPH.toFixed(1) + ' mph';
-  //     } else {
-  //       console.log('broken');
-  //     }
-  //   });
-  // } 
-
-  // changeTemp()
-
-
+//DATE
 function setDate() {
 
   var now = new Date();
@@ -521,6 +420,83 @@ document.querySelector('.work__overlay3').addEventListener('mouseout', function(
 
 
 
+
+
+
+//MUSIC
+
+/* Get Our Elements */
+const player = document.querySelector('.player');
+const video = player.querySelector('.viewer');
+const progress = player.querySelector('.progress');
+const progressBar = player.querySelector('.progress__filled');
+const toggle = player.querySelector('.toggle');
+const skipButtons = player.querySelectorAll('[data-skip]');
+const ranges = player.querySelectorAll('.player__slider');
+
+/* Build out functions */
+function togglePlay() {
+  const method = video.paused ? 'play' : 'pause';
+  video[method]();
+}
+
+function updateButton() {
+  const icon = this.paused ? '►' : '❚ ❚';
+  // console.log(icon);
+  toggle.textContent = icon;
+}
+
+function skip() {
+ video.currentTime += parseFloat(this.dataset.skip);
+}
+
+function handleRangeUpdate() {
+  video[this.name] = this.value;
+}
+
+function handleProgress() {
+  const percent = (video.currentTime / video.duration) * 100;
+  progressBar.style.flexBasis = `${percent}%`;
+}
+
+function scrub(e) {
+  const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
+  video.currentTime = scrubTime;
+}
+
+/* Hook up the event listners */
+video.addEventListener('click', togglePlay);
+video.addEventListener('play', updateButton);
+video.addEventListener('pause', updateButton);
+video.addEventListener('timeupdate', handleProgress);
+
+toggle.addEventListener('click', togglePlay);
+skipButtons.forEach(button => button.addEventListener('click', skip));
+ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
+ranges.forEach(range => range.addEventListener('mousemove', handleRangeUpdate));
+
+let mousedown = false;
+progress.addEventListener('click', scrub);
+progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
+progress.addEventListener('mousedown', () => mousedown = true);
+progress.addEventListener('mouseup', () => mousedown = false);
+
+
+//Change Src to play song
+
+let allSongs = document.querySelectorAll('.song');
+for (let i = 0; i < allSongs.length; i++) {
+  allSongs[i].addEventListener('click', function(e){
+
+    let player = document.querySelector('.player__video');
+
+    let songFile = allSongs[i].getAttribute("value");
+    player.src = songFile;
+
+    togglePlay();
+    e.preventDefault();
+  });
+}
 
 
 

@@ -7,7 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -16,8 +16,7 @@
 
 <body>
 <!--LANDING PAGE-->
-    <!-- <div class="bg__image">
-        <div class="bg__image-img2"></div>
+    <div class="bg__image">
         <p class="bg__text-front bg-text">Front</p>
         <p class="bg__text-end bg-text">End</p>
         <p class="bg__text-web bg-text">Web</p>
@@ -36,25 +35,14 @@
       <p class="loading-text3">
         Contacting monkeys for support...
       </p>
-    </div> -->
+    </div>
 
 <div class="container-fluid page-contain">
 
       <div class="weather">
         <div class="pulse">
-          <span></span>
-          <span></span>
-          <span></span>
         </div>
-        <div class="location">
-          <span id="city"></span>
-          <span id="country"></span>
-        </div> 
         <div id="time"></div>
-        <div class="temp">Temp: 
-          <span id="temp"></span>
-          <span id="tempicon" style="cursor:pointer"></span>
-        </div>
       </div>
 
     <div class="navigation">
@@ -68,37 +56,15 @@
     
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item" onclick="linkChecked()"><a href="#" class="navigation__link port-item" data-toggle="collapse" data-target="#home"><span>01</span>About Gerard</a></li>
-          <li class="navigation__item" onclick="linkChecked()"><a href="#" class="navigation__link port-item" data-toggle="collapse" data-target="#work-experience"><span>02</span>Work Experience</a></li>
-          <li class="navigation__item" onclick="linkChecked()"><a href="#" class="navigation__link port-item" data-toggle="collapse" data-target="#games"><span>02</span>Game Development</a></li>
-          <!-- <li class="navigation__item" data-toggle="collapse" data-target="#games"><a href="#" class="navigation__link"><span>03</span>Game Development</a></li>
-          <li class="navigation__item" data-toggle="collapse" data-target="#contact"><a href="#" class="navigation__link"><span>04</span>Stories</a></li> -->
+          <li class="navigation__item" onclick="linkChecked()"><a href="#" class="navigation__link port-item" data-toggle="collapse" data-target="#home">About Gerard</a></li>
+          <li class="navigation__item" onclick="linkChecked()"><a href="#" class="navigation__link port-item" data-toggle="collapse" data-target="#work-experience">Web Development</a></li>
+          <li class="navigation__item" onclick="linkChecked()"><a href="#" class="navigation__link port-item" data-toggle="collapse" data-target="#games">Game Development</a></li>
+          <li class="navigation__item" onclick="linkChecked()"><a href="#" class="navigation__link port-item" data-toggle="collapse" data-target="#music">Music Development</a></li>
         </ul>
       </nav>
     </div>
 
-    <!-- <header id="main-header">
-      <div class="row no-gutters">
-        <div class="col-lg-12">
-          <div class="d-flex flex-row justify-content-between align-items-center">
-            <div class="p-5 bg-black nav-info">
-              Front End Developer
-            </div>
-          </div>
-          <div class="d-flex flex-column">
-            <div class="p-5 bg-light text-dark">
-              <div class="name d-flex flex-row justify-content-between align-items-center">
-                <h1 class="display-4">Gerard Genovese</h1>
-                <div><i class="fab fa-twitter"></i></div>
-                <div><i class="fab fa-facebook"></i></div>
-                <div><i class="fab fa-instagram"></i></div>
-                <div><i class="fab fa-github"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header> -->
+
 
     <!--HOME-->
     <div id="home" class="collapse show">
@@ -218,7 +184,7 @@
 
     <div class="card card-body py-5 work__experience">
       <h3>Work Experience</h3>
-      <p class="work__experience-title--info">I've done some Freelance Web Design and the experience gained was incredible. Check out the sites below.</p>
+      <p class="work__experience-title--info">Check out the sites I've created below.</p>
       <div class="card-deck">
         <div class="container card work__container">
           <img src="img/work/blog.jpg" alt="Avatar" class="work__image">
@@ -250,7 +216,7 @@
 <!--personal projects-->
     <div class="container-fluid">
         <h3>Personal Projects</h3>
-        <p class="work__experience-title--info">Here are some mock-up static web sites.</p>
+        <p class="work__experience-title--info">Take a look at some mock-up static web sites.</p>
       <div class="row">
         <div class="col-md-2 mb-5">
           <img src="img/work/scissors.png" class="work__personal-siteImg" alt="">
@@ -316,7 +282,7 @@
         </div>
         <div class="col-md-8 car__info-center">
           <h3>Car Site</h3>
-          <p class="work__experience-title--info">A mock-up automobile site using Toyota cars. This dynamic Web App lets you choose a car, pick its color, its accessories, and "purchase" it.</p>
+          <p class="work__experience-title--info">A mock-up automobile site. This dynamic Web App lets you choose a car, pick its color, its accessories, and "purchase" it.</p>
           <button class="btn text-dark work__button-car mt-5" data-toggle="modal" data-target="#carsite">Learn More</button>
         </div>
       </div>
@@ -325,14 +291,14 @@
     <hr class="hr-1">
 
 <!--GIJOE-->
-    <div class="container mt-5 pt-5">
+    <div class="container mt-5">
         <h3 class="text-center">G.I. Joe Directory</h3>
       <div class="row">
         <div class="col-md-12 joe__experience">
           <img src="img/work/all-joe.jpg" alt="GIJoe" class="joe__image">
         </div>
         <div class="col-md-12 text-center"> 
-          <p>A G.I. Joe directory. Search for all your favorite characters!</p>
+          <p class="work__experience-title--info">A G.I. Joe directory. Search for all your favorite characters!</p>
           <button class="btn text-dark joe__button mt-5" data-toggle="modal" data-target="#joe">Learn More</button>
         </div>
       </div>
@@ -583,10 +549,10 @@
       </div>
       <div class="modal-body">
         <img src="../img/modal/joe-logo-modal.PNG" class="work__modal-image" alt="">
-        <p class="work__modal-info">This Web App lets you search for individual G.I. Joe characters and the data is fetched via a JSON file and returned dynamically with no page loading. Created with HTML5, CSS3, and JavaScript.</p>
+        <p class="work__modal-info">This Web App lets you search for individual G.I. Joe characters and the data is fetched via a JSON file and returned dynamically with no page loading. Created with HTML5, CSS3, and JavaScript.<br>*Showcases only a few characters for functionality purposes*</p>
       </div>
       <div class="modal-footer">
-          <a href="https://carsiteapp.herokuapp.com/" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
+          <a href="gijoe/index.html" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -612,7 +578,7 @@
     <!--games-->
     <div id="games" class="collapse">
      
-      <div class="container-fluid">
+      <div class="container-fluid py-5">
         <h3>Game Development</h3>
         <p class="work__experience-title--info">I also enjoy learning about game production and development.</p>
         <div class="row games__row py-5">
@@ -651,7 +617,7 @@
         </div>
         <div class="modal-body">
           <img src="../img/modal/pong-modal.jpg" class="work__modal-image" alt="">
-          <p class="work__modal-info">Play a game of Pong created in HTML5 using Canvas and programmed in JavaScript.</p>
+          <p class="work__modal-info">Play a game of Pong created in HTML5 using Canvas and programmed in JavaScript. *This game should be played on a desktop with a mouse*</p>
         </div>
         <div class="modal-footer">
             <a href="https://carsiteapp.herokuapp.com/" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
@@ -693,7 +659,7 @@
         </div>
         <div class="modal-body">
           <img src="../img/modal/battleship-modal.jpg" class="work__modal-image" alt="">
-          <p class="work__modal-info">Play a game of Battleship creating in JavaScript.</p>
+          <p class="work__modal-info">Play a game of Battleship created in JavaScript.</p>
         </div>
         <div class="modal-footer">
             <a href="https://carsiteapp.herokuapp.com/" target="_blank" class="mr-auto"> <button class="btn btn-primary">Visit Site</button></a>
@@ -714,59 +680,79 @@
 
 
 
-    <!--Contact-->
-    <!-- <div id="contact" class="collapse">
-        <div class="card card-body bg-danger text-white py-5">
-            <h2>Contact</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, facere.</p>
-        </div>
-        <div class="card card-body py-5">
-            <h3>Get in touch</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, natus?</p>
-            <form>
-                <div class="form-group">
-                    <div class="input-group input-grou-lg">
-                        <span class="input-group-addon bg-danger text-white">
-                            <i class="fa fa-user"></i>
-                        </span>
-                        <input type="text" class="form-control bg-dark text-white" placeholder="Name">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="input-group input-grou-lg">
-                        <span class="input-group-addon bg-danger text-white">
-                            <i class="fa fa-envelope"></i>
-                        </span>
-                        <input type="email" class="form-control bg-dark text-white" placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="input-group input-grou-lg">
-                        <span class="input-group-addon bg-danger text-white">
-                            <i class="fa fa-pencil"></i>
-                        </span>
-                        <textarea rows="5" class="form-control bg-dark text-white" placeholder="Message"></textarea>
-                    </div>
-                </div>
-                <input type="submit" value="Submit" class="btn btn-danger btn-block btn-lg">
-            </form>
-        </div>
-    </div> -->
-
+    <!--Music-->
+   
+    <div id="music" class="collapse">
+      <div class="card-body">
+        <h3>Music Development</h3>
+        <p class="work__experience-title--info">In my spare time I enjoy creating music! Give my beats a listen.</p>
+      </div>
+      <section class="music-body">
+        <div class="player">
+            <video class="player__video viewer" src="music/alladinsquest.mp3"></video>
+       
+            <div class="player__controls">
+              <div class="progress">
+               <div class="progress__filled"></div>
+              </div>
+              <button class="player__button toggle play" title="Toggle Play">►</button>
+              <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+              <!-- <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1"> -->
+              <button data-skip="-10" class="player__button skip">« 10s</button>
+              <button data-skip="25" class="player__button skip">25s »</button>
+            </div>
+           </div>
+       
+           <div class="music-scrollmenu">
+             <div class="song" value="music/alladinsquest.mp3">Alladins Quest</div>
+             <div class="song" value="music/alreadysmokin.mp3">Already Smoking</div>
+             <div class="song" value="music/arabiansmooth.mp3">Arabian Smooth</div>
+             <div class="song" value="music/astrangeplace.mp3">A Strange Place</div>
+             <div class="song" value="music/babygetitright.mp3">Baby Get it Right</div>
+             <div class="song" value="music/badthoughtswithroughdays.mp3">Bad Rough Days</div>
+             <div class="song" value="music/beddytime.mp3">Bed Time</div>
+             <div class="song" value="music/bellsofthought.mp3">Bells of Thought</div>
+             <div class="song" value="music/betafailure.mp3">Beta Failure</div>
+             <div class="song" value="music/bymyself.mp3">By Myself</div>
+             <div class="song" value="music/fantasydreaming.mp3">Fantasy Dreaming</div>
+             <div class="song" value="music/heartofsteel-piano.mp3">Heart of Steel</div>
+             <div class="song" value="music/heartofsteelrmx.mp3">Heart of Steel Rmx</div>
+             <div class="song" value="music/ineverknew.mp3">I Never Knew</div>
+             <div class="song" value="music/infested.mp3">Infested</div>
+             <div class="song" value="music/mindless.mp3">Mindless</div>
+             <div class="song" value="music/mypain.mp3">My Pain</div>
+             <div class="song" value="music/pumptheshotgun.mp3">Pump the Shotgun</div>
+             <div class="song" value="music/roughstreets.mp3">Streets of Boogie</div>
+             <div class="song" value="music/smoothwarpath.mp3">Smooth Warpath</div>
+             <div class="song" value="music/soundsofsymph.mp3">Sounds of Symph</div>
+             <div class="song" value="music/thespecial.mp3">The Special</div>
+             <div class="song" value="music/tranquilityofthesoldier.mp3">Tranquility of the Soldier</div>
+             <div class="song" value="music/willienights.mp3">Willie Nights</div>
+             <div class="song" value="music/workinitup.mp3">Working it Up</div> 
+           </div>
+          </section>
+      </div> <!--end home page-->
 
 
     <!--Footer-->
-
+    <footer id="main-footer" class="mt-5 p-5 bg-dark text-white">
+        <div class="row">
+            <div class="col-md-12 d-flex flex-row justify-content-between align-items-center">
+                <a href="img/portfolio_resume.pdf" download="img/portfolio_resume" class="btn btn-outline-light"><i class="fa fa-cloud"></i> Download My Resume</a>
+                <a href="https://github.com/gerardgenovese" class="btn btn-outline-light" data-toggle="tooltip" title="GitHub Profile" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.codewars.com/users/gmoneymaster24" class="btn btn-outline-light" data-toggle="tooltip" title="Codewars Profile" target="_blank"><i class="fas fa-code"></i></a>
+                <a href="https://www.instagram.com/gerardgenovese/" class="btn btn-outline-light" data-toggle="tooltip" title="Instagram Profile" target="_blank"><i class="fab fa-instagram"></i></a>
+     
+            </div>
+        </div>
+    </footer>
+    
     
 </div><!--container end-->
 
-<footer id="main-footer" class="mt-5 p-5 bg-dark text-white">
-    <div class="row">
-        <div class="col-md-12">
-            <a href="img/portfolio_resume.pdf" download="img/portfolio_resume" class="btn btn-outline-light"><i class="fa fa-cloud"></i> Download My Resume</a>
-        </div>
-    </div>
-</footer>
+
+
+
 
 
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->

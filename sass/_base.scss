@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: inherit;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 
 @mixin respond($breakpoint) {
@@ -23,7 +26,7 @@
 }
 
 // COLORS
-$color-primary: #55c57a;
+// $color-primary: #55c57a;
 // $color-primary-light: #7ed56f;
 // $color-primary-dark: #28b485;
 $color-primary: #1b1361;
@@ -46,7 +49,9 @@ $color-grey-dark-3: #333;
 $color-white: #fff;
 $color-black: #000;
 
-
+.btn-primary {
+  background-color: $color-tertiary-light;
+}
 // FONT
 $default-font-size: 1.6rem;
 
@@ -76,7 +81,7 @@ html {
 
 body {
     box-sizing: border-box;
-   padding: 0;
+    padding: 0;
 
 
     @include respond(tab-port) {
