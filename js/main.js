@@ -1,26 +1,26 @@
 //landing page
 
-const landingPage = document.querySelector('.bg__image');
-const loadingPage = document.querySelector('.loading');
-const webSite = document.querySelector('.page-contain');
+// const landingPage = document.querySelector('.bg__image');
+// const loadingPage = document.querySelector('.loading');
+// const webSite = document.querySelector('.page-contain');
 
-loadingPage.style.display = 'none';
-webSite.style.display = 'none';
+// loadingPage.style.display = 'none';
+// webSite.style.display = 'none';
 
-const enterSite = document.querySelector('.bg-enter');
-enterSite.addEventListener('click', enterWebsite);
+// const enterSite = document.querySelector('.bg-enter');
+// enterSite.addEventListener('click', enterWebsite);
 
-//click button and loading page then site "loads";
-function enterWebsite() {
-  landingPage.style.display = 'none';
-  loadingPage.style.display = 'block';
+// //click button and loading page then site "loads";
+// function enterWebsite() {
+//   landingPage.style.display = 'none';
+//   loadingPage.style.display = 'block';
 
-  setTimeout(function(){
-    webSite.style.display = 'block';
-    loadingPage.style.display = 'none';
-  },7000);
+//   setTimeout(function(){
+//     webSite.style.display = 'block';
+//     loadingPage.style.display = 'none';
+//   },7000);
   
-}
+// }
 
 
 
@@ -80,7 +80,10 @@ function navClick(e) {
   
 // }
 function linkChecked() {
-
+  const navList = document.querySelector('.navigation__list');
+  setTimeout(function(){
+    navList.style.display = 'none';
+  }, 500);
   const navigationNAV = document.querySelector('.navigation__nav');
 
   navigationNAV.style.zIndex = '0';

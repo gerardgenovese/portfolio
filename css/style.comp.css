@@ -383,6 +383,7 @@ i {
   animation-delay: 3.5s; }
 
 .bg-enter {
+  background-color: #e2dbdb;
   padding: 2rem 5rem;
   border-radius: 5rem;
   position: absolute;
